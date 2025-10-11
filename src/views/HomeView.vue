@@ -13,7 +13,7 @@
           playsinline
           class="w-full h-full object-cover"
         >
-          <source src="/Şahinler-Egypt-home.mp4" type="video/mp4" />
+          <source src="/sahinler-Egypt-home.mp4" type="video/mp4" />
         </video>
 
         <!-- Modern Overlay -->
