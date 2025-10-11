@@ -209,12 +209,13 @@ const quickLinks = [
   { name: "Contact", path: "/contact" },
 ];
 
-const handleNewsletterSubmit = () => {
-  if (email.value) {
-    // Here you would handle the newsletter subscription
-    console.log("Newsletter subscription:", email.value);
-    email.value = "";
-    // You could show a success message here
-  }
-};
+// Newsletter submission handler (currently unused but kept for future implementation)
+// const handleNewsletterSubmit = () => {
+//   if (email.value) {
+//     // Here you would handle the newsletter subscription
+//     console.log("Newsletter subscription:", email.value);
+//     email.value = "";
+//     // You could show a success message here
+//   }
+// };
 </script>

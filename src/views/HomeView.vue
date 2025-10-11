@@ -538,22 +538,22 @@ const productCategories = [
   {
     name: "Knitwear",
     description: "Premium knitted garments with superior comfort and fit",
-    image: "/public/products/product-1.jpeg",
+    image: "/products/product-1.jpeg",
   },
   {
     name: "Woven",
     description: "High-quality woven fabrics for diverse applications",
-    image: "/public/products/product-2.jpeg",
+    image: "/products/product-2.jpeg",
   },
   {
     name: "Embroidery",
     description: "Intricate embroidered designs with precision and artistry",
-    image: "/public/products/product-1.jpeg",
+    image: "/products/product-1.jpeg",
   },
   {
     name: "Sublimation",
     description: "Advanced sublimation printing for vibrant, lasting colors",
-    image: "/public/products/product-2.jpeg",
+    image: "/products/product-2.jpeg",
   },
 ];
 </script>

@@ -18,6 +18,8 @@ const props = withDefaults(defineProps<Props>(), {
   containerClass: ''
 })
 
+import { computed } from 'vue'
+
 const spinnerClass = computed(() => {
   const sizes = {
     sm: 'w-4 h-4',
