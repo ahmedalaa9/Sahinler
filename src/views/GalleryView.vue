@@ -304,7 +304,7 @@ import { ref, computed } from "vue";
 import CounterAnimation from "../components/ui/CounterAnimation.vue";
 
 const activeFilter = ref("All");
-const selectedImage = ref(null);
+// const selectedImage = ref(null);
 
 const galleryCategories = ["All", "Factory Floor", "Machinery", "Facilities"];
 

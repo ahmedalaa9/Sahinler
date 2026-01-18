@@ -166,9 +166,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from "vue";
+import { computed } from "vue";
 
-const email = ref("");
+// const email = ref("");
 const currentYear = computed(() => new Date().getFullYear());
 
 const quickLinks = [

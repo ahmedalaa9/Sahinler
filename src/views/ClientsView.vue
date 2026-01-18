@@ -470,120 +470,120 @@ const wovens = [
   "Rain Coats",
 ];
 
-const productIcons = [
-  { icon: "tank_top", name: "Tank Top" },
-  { icon: "straight_leg_pants", name: "Pants" },
-  { icon: "straight_leg_pants", name: "Chinos" },
-  { icon: "checkroom", name: "T-Shirt" },
-  { icon: "checkroom", name: "Polo" },
-  { icon: "shorts", name: "Shorts" },
-  { icon: "shorts", name: "Cargo" },
-  { icon: "checkroom", name: "Jacket" },
-  { icon: "checkroom", name: "Hoodie" },
-  { icon: "checkroom", name: "Vest" },
-  { icon: "tank_top", name: "Tank" },
-  { icon: "straight_leg_pants", name: "Jogger" },
-  { icon: "straight_leg_pants", name: "Legging" },
-  { icon: "shorts", name: "Skirt" },
-  { icon: "checkroom", name: "Dress" },
-  { icon: "checkroom", name: "Shirt" },
-  { icon: "checkroom", name: "Sweatshirt" },
-  { icon: "checkroom", name: "Cardigan" },
-  { icon: "checkroom", name: "Blazer" },
-  { icon: "checkroom", name: "Coat" },
-  { icon: "checkroom", name: "Windbreaker" },
-  { icon: "checkroom", name: "Bomber" },
-  { icon: "checkroom", name: "Puffer" },
-  { icon: "checkroom", name: "Sweater" },
-  { icon: "checkroom", name: "Active" },
-];
+// const productIcons = [
+//   { icon: "tank_top", name: "Tank Top" },
+//   { icon: "straight_leg_pants", name: "Pants" },
+//   { icon: "straight_leg_pants", name: "Chinos" },
+//   { icon: "checkroom", name: "T-Shirt" },
+//   { icon: "checkroom", name: "Polo" },
+//   { icon: "shorts", name: "Shorts" },
+//   { icon: "shorts", name: "Cargo" },
+//   { icon: "checkroom", name: "Jacket" },
+//   { icon: "checkroom", name: "Hoodie" },
+//   { icon: "checkroom", name: "Vest" },
+//   { icon: "tank_top", name: "Tank" },
+//   { icon: "straight_leg_pants", name: "Jogger" },
+//   { icon: "straight_leg_pants", name: "Legging" },
+//   { icon: "shorts", name: "Skirt" },
+//   { icon: "checkroom", name: "Dress" },
+//   { icon: "checkroom", name: "Shirt" },
+//   { icon: "checkroom", name: "Sweatshirt" },
+//   { icon: "checkroom", name: "Cardigan" },
+//   { icon: "checkroom", name: "Blazer" },
+//   { icon: "checkroom", name: "Coat" },
+//   { icon: "checkroom", name: "Windbreaker" },
+//   { icon: "checkroom", name: "Bomber" },
+//   { icon: "checkroom", name: "Puffer" },
+//   { icon: "checkroom", name: "Sweater" },
+//   { icon: "checkroom", name: "Active" },
+// ];
 
-const clientCategories = [
-  {
-    title: "Fashion Retailers",
-    description: "Leading retail chains and fashion brands worldwide",
-    icon: "storefront",
-    brands: [
-      "International Fashion Chain",
-      "Premium Retail Group",
-      "Global Fashion Network",
-      "Luxury Department Store",
-    ],
-  },
-  {
-    title: "Sportswear Brands",
-    description: "Athletic and performance wear manufacturers",
-    icon: "fitness_center",
-    brands: [
-      "Athletic Performance Co",
-      "Sports Excellence Brand",
-      "Fitness Apparel Group",
-      "Active Lifestyle Label",
-    ],
-  },
-  {
-    title: "Private Labels",
-    description: "Custom manufacturing for private label brands",
-    icon: "label",
-    brands: [
-      "Custom Label Solutions",
-      "Private Brand Collective",
-      "Exclusive Label Group",
-      "Boutique Brand Partners",
-    ],
-  },
-];
+// const clientCategories = [
+//   {
+//     title: "Fashion Retailers",
+//     description: "Leading retail chains and fashion brands worldwide",
+//     icon: "storefront",
+//     brands: [
+//       "International Fashion Chain",
+//       "Premium Retail Group",
+//       "Global Fashion Network",
+//       "Luxury Department Store",
+//     ],
+//   },
+//   {
+//     title: "Sportswear Brands",
+//     description: "Athletic and performance wear manufacturers",
+//     icon: "fitness_center",
+//     brands: [
+//       "Athletic Performance Co",
+//       "Sports Excellence Brand",
+//       "Fitness Apparel Group",
+//       "Active Lifestyle Label",
+//     ],
+//   },
+//   {
+//     title: "Private Labels",
+//     description: "Custom manufacturing for private label brands",
+//     icon: "label",
+//     brands: [
+//       "Custom Label Solutions",
+//       "Private Brand Collective",
+//       "Exclusive Label Group",
+//       "Boutique Brand Partners",
+//     ],
+//   },
+// ];
 
-const testimonials = [
-  {
-    id: 1,
-    text: "Şahinler Egypt has been our trusted manufacturing partner for over 5 years. Their commitment to quality and on-time delivery is exceptional.",
-    name: "Sarah Johnson",
-    position: "Sourcing Director",
-    company: "Global Fashion Brand",
-    initial: "S",
-  },
-  {
-    id: 2,
-    text: "The quality of their embroidery work is outstanding. They understand our brand requirements and consistently exceed our expectations.",
-    name: "Michael Chen",
-    position: "Product Manager",
-    company: "Premium Sportswear",
-    initial: "M",
-  },
-  {
-    id: 3,
-    text: "Working with Şahinler Egypt has streamlined our production process. Their professionalism and expertise are unmatched in the industry.",
-    name: "Emma Rodriguez",
-    position: "Supply Chain Manager",
-    company: "International Retailer",
-    initial: "E",
-  },
-  {
-    id: 4,
-    text: "Their sustainable manufacturing practices align perfectly with our brand values. Quality and environmental responsibility go hand in hand.",
-    name: "David Thompson",
-    position: "Brand Director",
-    company: "Eco Fashion Label",
-    initial: "D",
-  },
-  {
-    id: 5,
-    text: "The team at Şahinler Egypt is incredibly responsive and flexible. They adapt to our changing needs and tight deadlines effortlessly.",
-    name: "Lisa Wang",
-    position: "Operations Manager",
-    company: "Fast Fashion Chain",
-    initial: "L",
-  },
-  {
-    id: 6,
-    text: "From initial design to final delivery, their attention to detail is remarkable. They truly understand the luxury market requirements.",
-    name: "James Wilson",
-    position: "Creative Director",
-    company: "Luxury Fashion House",
-    initial: "J",
-  },
-];
+// const testimonials = [
+//   {
+//     id: 1,
+//     text: "Şahinler Egypt has been our trusted manufacturing partner for over 5 years. Their commitment to quality and on-time delivery is exceptional.",
+//     name: "Sarah Johnson",
+//     position: "Sourcing Director",
+//     company: "Global Fashion Brand",
+//     initial: "S",
+//   },
+//   {
+//     id: 2,
+//     text: "The quality of their embroidery work is outstanding. They understand our brand requirements and consistently exceed our expectations.",
+//     name: "Michael Chen",
+//     position: "Product Manager",
+//     company: "Premium Sportswear",
+//     initial: "M",
+//   },
+//   {
+//     id: 3,
+//     text: "Working with Şahinler Egypt has streamlined our production process. Their professionalism and expertise are unmatched in the industry.",
+//     name: "Emma Rodriguez",
+//     position: "Supply Chain Manager",
+//     company: "International Retailer",
+//     initial: "E",
+//   },
+//   {
+//     id: 4,
+//     text: "Their sustainable manufacturing practices align perfectly with our brand values. Quality and environmental responsibility go hand in hand.",
+//     name: "David Thompson",
+//     position: "Brand Director",
+//     company: "Eco Fashion Label",
+//     initial: "D",
+//   },
+//   {
+//     id: 5,
+//     text: "The team at Şahinler Egypt is incredibly responsive and flexible. They adapt to our changing needs and tight deadlines effortlessly.",
+//     name: "Lisa Wang",
+//     position: "Operations Manager",
+//     company: "Fast Fashion Chain",
+//     initial: "L",
+//   },
+//   {
+//     id: 6,
+//     text: "From initial design to final delivery, their attention to detail is remarkable. They truly understand the luxury market requirements.",
+//     name: "James Wilson",
+//     position: "Creative Director",
+//     company: "Luxury Fashion House",
+//     initial: "J",
+//   },
+// ];
 
 const partnershipBenefits = [
   {
@@ -612,34 +612,34 @@ const partnershipBenefits = [
   },
 ];
 
-const caseStudies = [
-  {
-    id: 1,
-    title: "Premium Athletic Wear Collection",
-    category: "Sportswear",
-    description:
-      "Successfully delivered a complete athletic wear collection for a leading sports brand, featuring moisture-wicking fabrics and performance enhancements.",
-    image:
-      "https://images.pexels.com/photos/7256515/pexels-photo-7256515.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    metrics: {
-      timeline: "6 weeks",
-      quantity: "50K units",
-      quality: "99.8%",
-    },
-  },
-  {
-    id: 2,
-    title: "Luxury Fashion Line Launch",
-    category: "Fashion",
-    description:
-      "Partnered with a luxury fashion house to create an exclusive collection featuring intricate embroidery and premium materials.",
-    image:
-      "https://images.pexels.com/photos/7256508/pexels-photo-7256508.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    metrics: {
-      timeline: "8 weeks",
-      quantity: "25K units",
-      quality: "99.9%",
-    },
-  },
-];
+// const caseStudies = [
+//   {
+//     id: 1,
+//     title: "Premium Athletic Wear Collection",
+//     category: "Sportswear",
+//     description:
+//       "Successfully delivered a complete athletic wear collection for a leading sports brand, featuring moisture-wicking fabrics and performance enhancements.",
+//     image:
+//       "https://images.pexels.com/photos/7256515/pexels-photo-7256515.jpeg?auto=compress&cs=tinysrgb&w=1200",
+//     metrics: {
+//       timeline: "6 weeks",
+//       quantity: "50K units",
+//       quality: "99.8%",
+//     },
+//   },
+//   {
+//     id: 2,
+//     title: "Luxury Fashion Line Launch",
+//     category: "Fashion",
+//     description:
+//       "Partnered with a luxury fashion house to create an exclusive collection featuring intricate embroidery and premium materials.",
+//     image:
+//       "https://images.pexels.com/photos/7256508/pexels-photo-7256508.jpeg?auto=compress&cs=tinysrgb&w=1200",
+//     metrics: {
+//       timeline: "8 weeks",
+//       quantity: "25K units",
+//       quality: "99.9%",
+//     },
+//   },
+// ];
 </script>

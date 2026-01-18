@@ -337,18 +337,18 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive } from "vue";
+import { ref } from "vue";
 
-const isSubmitting = ref(false);
+// const isSubmitting = ref(false);
 
-const form = reactive({
-  firstName: "",
-  lastName: "",
-  email: "",
-  company: "",
-  subject: "",
-  message: "",
-});
+// const form = reactive({
+//   firstName: "",
+//   lastName: "",
+//   email: "",
+//   company: "",
+//   subject: "",
+//   message: "",
+// });
 
 const faqs = ref([
   {

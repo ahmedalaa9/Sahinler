@@ -1555,94 +1555,94 @@
 </template>
 
 <script setup lang="ts">
-const timeline = [
-  {
-    year: "1982",
-    title: "Foundation in Germany",
-    description:
-      "Kemal Şahin established Santex Germany in Aachen, Germany, laying the foundation for what would become Şahinler Holding.",
-    icon: "rocket_launch",
-  },
-  {
-    year: "1990s",
-    title: "Business Diversification",
-    description:
-      "Expansion beyond textiles into construction, catering, and other sectors, building a diversified business portfolio.",
-    icon: "trending_up",
-  },
-  {
-    year: "2006",
-    title: "Egypt Operations Launch",
-    description:
-      "Established Şahinler Egypt in 10th of Ramadan City, creating a strategic manufacturing hub for Middle East and African markets.",
-    icon: "factory",
-  },
-  {
-    year: "2010s",
-    title: "Multi-Sector Growth",
-    description:
-      "Expanded operations across 7 sectors including free zone administration, tourism, and sport academies across multiple countries.",
-    icon: "diversity_3",
-  },
-  {
-    year: "2020",
-    title: "Global Workforce Expansion",
-    description:
-      "Reached 40,000+ employees (10,000 direct, 30,000 indirect) across 6 countries, establishing a truly global presence.",
-    icon: "groups",
-  },
-  {
-    year: "2024",
-    title: "Facility Modernization",
-    description:
-      "Completed major facility upgrades in Egypt with 30 production lines and comprehensive area optimization for maximum efficiency.",
-    icon: "precision_manufacturing",
-  },
-  {
-    year: "2025",
-    title: "Strategic Transformation",
-    description:
-      "Implementing comprehensive digitalization, sustainability initiatives, and facility expansion to lead the industry's future.",
-    icon: "trending_up",
-  },
-];
+// const timeline = [
+//   {
+//     year: "1982",
+//     title: "Foundation in Germany",
+//     description:
+//       "Kemal Şahin established Santex Germany in Aachen, Germany, laying the foundation for what would become Şahinler Holding.",
+//     icon: "rocket_launch",
+//   },
+//   {
+//     year: "1990s",
+//     title: "Business Diversification",
+//     description:
+//       "Expansion beyond textiles into construction, catering, and other sectors, building a diversified business portfolio.",
+//     icon: "trending_up",
+//   },
+//   {
+//     year: "2006",
+//     title: "Egypt Operations Launch",
+//     description:
+//       "Established Şahinler Egypt in 10th of Ramadan City, creating a strategic manufacturing hub for Middle East and African markets.",
+//     icon: "factory",
+//   },
+//   {
+//     year: "2010s",
+//     title: "Multi-Sector Growth",
+//     description:
+//       "Expanded operations across 7 sectors including free zone administration, tourism, and sport academies across multiple countries.",
+//     icon: "diversity_3",
+//   },
+//   {
+//     year: "2020",
+//     title: "Global Workforce Expansion",
+//     description:
+//       "Reached 40,000+ employees (10,000 direct, 30,000 indirect) across 6 countries, establishing a truly global presence.",
+//     icon: "groups",
+//   },
+//   {
+//     year: "2024",
+//     title: "Facility Modernization",
+//     description:
+//       "Completed major facility upgrades in Egypt with 30 production lines and comprehensive area optimization for maximum efficiency.",
+//     icon: "precision_manufacturing",
+//   },
+//   {
+//     year: "2025",
+//     title: "Strategic Transformation",
+//     description:
+//       "Implementing comprehensive digitalization, sustainability initiatives, and facility expansion to lead the industry's future.",
+//     icon: "trending_up",
+//   },
+// ];
 
-const coreValues = [
-  {
-    title: "Uncompromising Quality",
-    description:
-      "Every garment undergoes rigorous quality control processes, ensuring we consistently deliver products that exceed international standards and client expectations.",
-    icon: "verified",
-  },
-  {
-    title: "Continuous Innovation",
-    description:
-      "We invest heavily in research, technology, and process improvement to stay ahead of industry trends and provide cutting-edge manufacturing solutions.",
-    icon: "lightbulb",
-  },
-  {
-    title: "Environmental Stewardship",
-    description:
-      "Our commitment to sustainability drives us to implement eco-friendly processes, reduce waste, and minimize our environmental footprint.",
-    icon: "eco",
-  },
-  {
-    title: "Ethical Excellence",
-    description:
-      "We build lasting relationships through transparency, fair business practices, and ethical treatment of all employees and partners.",
-    icon: "handshake",
-  },
-  {
-    title: "Client Partnership",
-    description:
-      "We view every client as a strategic partner, working closely to understand their unique needs and deliver customized solutions.",
-    icon: "favorite",
-  },
-  {
-    title: "Operational Excellence",
-    description:
-      "Through continuous improvement and lean manufacturing principles, we optimize every aspect of our operations for maximum efficiency.",
-    icon: "diversity_3",
-  },
-];
+// const coreValues = [
+//   {
+//     title: "Uncompromising Quality",
+//     description:
+//       "Every garment undergoes rigorous quality control processes, ensuring we consistently deliver products that exceed international standards and client expectations.",
+//     icon: "verified",
+//   },
+//   {
+//     title: "Continuous Innovation",
+//     description:
+//       "We invest heavily in research, technology, and process improvement to stay ahead of industry trends and provide cutting-edge manufacturing solutions.",
+//     icon: "lightbulb",
+//   },
+//   {
+//     title: "Environmental Stewardship",
+//     description:
+//       "Our commitment to sustainability drives us to implement eco-friendly processes, reduce waste, and minimize our environmental footprint.",
+//     icon: "eco",
+//   },
+//   {
+//     title: "Ethical Excellence",
+//     description:
+//       "We build lasting relationships through transparency, fair business practices, and ethical treatment of all employees and partners.",
+//     icon: "handshake",
+//   },
+//   {
+//     title: "Client Partnership",
+//     description:
+//       "We view every client as a strategic partner, working closely to understand their unique needs and deliver customized solutions.",
+//     icon: "favorite",
+//   },
+//   {
+//     title: "Operational Excellence",
+//     description:
+//       "Through continuous improvement and lean manufacturing principles, we optimize every aspect of our operations for maximum efficiency.",
+//     icon: "diversity_3",
+//   },
+// ];
 </script>
