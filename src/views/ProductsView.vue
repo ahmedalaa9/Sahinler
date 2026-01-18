@@ -96,9 +96,9 @@
             >
               {{ region.name }}
             </h3>
-            <p class="text-gray-600 dark:text-gray-300 text-sm">
+            <!-- <p class="text-gray-600 dark:text-gray-300 text-sm">
               {{ region.countries }} Countries
-            </p>
+            </p> -->
           </div>
         </div>
 
@@ -191,18 +191,32 @@
 
 <script setup lang="ts">
 const products = [
-  { id: 1, image: "/products/tshirt-1.png" },
-  { id: 2, image: "/products/tshirt-1-Copy.png" },
-  { id: 3, image: "/products/tshirt-1-Copy(2).png" },
-  { id: 4, image: "/products/tshirt-1-Copy(3).png" },
-  { id: 5, image: "/products/tshirt-1-Copy(4).png" },
-  { id: 6, image: "/products/tshirt-1-Copy(5).png" },
-  { id: 7, image: "/products/tshirt-1-Copy(2).png" },
-  { id: 8, image: "/products/tshirt-1-Copy(6).png" },
-  { id: 9, image: "/products/tshirt-1-Copy(7).png" },
-  { id: 10, image: "/products/tshirt-1-Copy(8).png" },
-  { id: 11, image: "/products/tshirt-1-Copy(9).png" },
-  { id: 12, image: "/products/tshirt-1-Copy(10).png" },
+  { id: 1, image: "/products/11.jpeg" },
+  { id: 2, image: "/products/22.jpeg" },
+  { id: 3, image: "/products/33.jpeg" },
+  { id: 4, image: "/products/44.jpeg" },
+  { id: 5, image: "/products/55.jpeg" },
+  { id: 6, image: "/products/66.jpeg" },
+  { id: 7, image: "/products/77.jpeg" },
+  { id: 8, image: "/products/88.jpeg" },
+  { id: 9, image: "/products/99.jpeg" },
+  { id: 10, image: "/products/111.jpeg" },
+  { id: 11, image: "/products/222.jpeg" },
+  { id: 12, image: "/products/333.jpeg" },
+  { id: 13, image: "/products/444.jpeg" },
+  { id: 14, image: "/products/555.jpeg" },
+  { id: 122, image: "/products/tshirt-1.png" },
+  { id: 222, image: "/products/tshirt-1-Copy.png" },
+  { id: 322, image: "/products/tshirt-1-Copy(2).png" },
+  { id: 422, image: "/products/tshirt-1-Copy(3).png" },
+  { id: 522, image: "/products/tshirt-1-Copy(4).png" },
+  { id: 622, image: "/products/tshirt-1-Copy(5).png" },
+  { id: 722, image: "/products/tshirt-1-Copy(2).png" },
+  { id: 822, image: "/products/tshirt-1-Copy(6).png" },
+  { id: 922, image: "/products/tshirt-1-Copy(7).png" },
+  { id: 1022, image: "/products/tshirt-1-Copy(8).png" },
+  { id: 1122, image: "/products/tshirt-1-Copy(9).png" },
+  { id: 1222, image: "/products/tshirt-1-Copy(10).png" },
 ];
 
 const exportRegions = [

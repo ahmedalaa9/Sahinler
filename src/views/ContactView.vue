@@ -30,9 +30,8 @@
     <!-- Contact Form & Info Section -->
     <section class="py-20">
       <div class="container-max section-padding">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <!-- Contact Form -->
-          <div
+        <!-- <div class="grid grid-cols-1 lg:grid-cols-2 gap-16"> -->
+        <!-- <div
             v-motion
             :initial="{ x: -100, opacity: 0 }"
             :visible="{ x: 0, opacity: 1, transition: { duration: 800 } }"
@@ -164,133 +163,109 @@
                 }}</span>
               </button>
             </form>
+          </div> -->
+
+        <!-- Contact Information -->
+        <div
+          v-motion
+          :initial="{ x: 100, opacity: 0 }"
+          :visible="{
+            x: 0,
+            opacity: 1,
+            transition: { duration: 800, delay: 300 },
+          }"
+          class="space-y-8"
+        >
+          <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+              Contact Information
+            </h3>
+            <div class="space-y-6">
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center flex-shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary-600 dark:text-primary-400"
+                    >location_on</span
+                  >
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 dark:text-white mb-1">
+                    Address
+                  </h4>
+                  <p class="text-gray-600 dark:text-gray-300">
+                    3rd Industrial Zone, Block 16, Plots 5,6 & 7 Block 10, Plots
+                    1, 12, 13 & 14 New Borg Alarab, Alexandria<br />
+                    Egypt
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-12 h-12 bg-secondary-100 dark:bg-secondary-900 rounded-lg flex items-center justify-center flex-shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary-600 dark:text-secondary-400"
+                    >phone</span
+                  >
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 dark:text-white mb-1">
+                    Phone
+                  </h4>
+                  <p class="text-gray-600 dark:text-gray-300">+2034622215/16</p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-12 h-12 bg-accent-100 dark:bg-accent-900 rounded-lg flex items-center justify-center flex-shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-accent-600 dark:text-accent-400"
+                    >email</span
+                  >
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 dark:text-white mb-1">
+                    Email
+                  </h4>
+                  <p class="text-gray-600 dark:text-gray-300">
+                    info@sahinleregypt.com
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- Contact Information -->
-          <div
-            v-motion
-            :initial="{ x: 100, opacity: 0 }"
-            :visible="{
-              x: 0,
-              opacity: 1,
-              transition: { duration: 800, delay: 300 },
-            }"
-            class="space-y-8"
-          >
-            <!-- Contact Details -->
-            <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
-              <h3 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
-                Contact Information
-              </h3>
-              <div class="space-y-6">
-                <div class="flex items-start space-x-4">
-                  <div
-                    class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center flex-shrink-0"
-                  >
-                    <span
-                      class="material-symbols-outlined text-primary-600 dark:text-primary-400"
-                      >location_on</span
-                    >
-                  </div>
-                  <div>
-                    <h4
-                      class="font-semibold text-gray-900 dark:text-white mb-1"
-                    >
-                      Address
-                    </h4>
-                    <p class="text-gray-600 dark:text-gray-300">
-                      10th of Ramadan City<br />
-                      Egypt
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex items-start space-x-4">
-                  <div
-                    class="w-12 h-12 bg-secondary-100 dark:bg-secondary-900 rounded-lg flex items-center justify-center flex-shrink-0"
-                  >
-                    <span
-                      class="material-symbols-outlined text-secondary-600 dark:text-secondary-400"
-                      >phone</span
-                    >
-                  </div>
-                  <div>
-                    <h4
-                      class="font-semibold text-gray-900 dark:text-white mb-1"
-                    >
-                      Phone
-                    </h4>
-                    <p class="text-gray-600 dark:text-gray-300">
-                      +20 15 5574 4411
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex items-start space-x-4">
-                  <div
-                    class="w-12 h-12 bg-accent-100 dark:bg-accent-900 rounded-lg flex items-center justify-center flex-shrink-0"
-                  >
-                    <span
-                      class="material-symbols-outlined text-accent-600 dark:text-accent-400"
-                      >email</span
-                    >
-                  </div>
-                  <div>
-                    <h4
-                      class="font-semibold text-gray-900 dark:text-white mb-1"
-                    >
-                      Email
-                    </h4>
-                    <p class="text-gray-600 dark:text-gray-300">
-                      info@sahinleregypt.com
-                    </p>
-                  </div>
-                </div>
-
-                <!-- <div class="flex items-start space-x-4">
-                  <div class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span class="material-symbols-outlined text-green-600 dark:text-green-400">schedule</span>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Business Hours</h4>
-                    <p class="text-gray-600 dark:text-gray-300">
-                      Monday - Friday: 8:00 AM - 6:00 PM<br>
-                      Saturday: 9:00 AM - 2:00 PM<br>
-                      Sunday: Closed
-                    </p>
-                  </div>
-                </div> -->
+          <!-- Quick Response Time -->
+          <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              Quick Response
+            </h3>
+            <div class="flex items-center space-x-4 mb-4">
+              <span class="material-symbols-outlined text-green-500 text-3xl"
+                >timer</span
+              >
+              <div>
+                <p class="text-lg font-semibold text-gray-900 dark:text-white">
+                  24-Hour Response Time
+                </p>
+                <p class="text-gray-600 dark:text-gray-300">
+                  We respond to all inquiries within 24 hours
+                </p>
               </div>
             </div>
-
-            <!-- Quick Response Time -->
-            <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
-              <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                Quick Response
-              </h3>
-              <div class="flex items-center space-x-4 mb-4">
-                <span class="material-symbols-outlined text-green-500 text-3xl"
-                  >timer</span
-                >
-                <div>
-                  <p
-                    class="text-lg font-semibold text-gray-900 dark:text-white"
-                  >
-                    24-Hour Response Time
-                  </p>
-                  <p class="text-gray-600 dark:text-gray-300">
-                    We respond to all inquiries within 24 hours
-                  </p>
-                </div>
-              </div>
-              <p class="text-gray-600 dark:text-gray-300 text-sm">
-                Our dedicated customer service team is committed to providing
-                prompt responses to help you with your manufacturing needs.
-              </p>
-            </div>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">
+              Our dedicated customer service team is committed to providing
+              prompt responses to help you with your manufacturing needs.
+            </p>
           </div>
         </div>
       </div>
+      <!-- </div> -->
     </section>
 
     <!-- FAQ Section -->
@@ -420,22 +395,22 @@ const faqs = ref([
   },
 ]);
 
-const submitForm = async () => {
-  isSubmitting.value = true;
+// const submitForm = async () => {
+//   isSubmitting.value = true;
 
-  // Simulate form submission
-  setTimeout(() => {
-    isSubmitting.value = false;
-    // Reset form
-    Object.keys(form).forEach((key) => {
-      form[key] = "";
-    });
-    // Show success message (you could use a toast notification here)
-    alert(
-      "Thank you for your message! We will get back to you within 24 hours."
-    );
-  }, 2000);
-};
+//   // Simulate form submission
+//   setTimeout(() => {
+//     isSubmitting.value = false;
+//     // Reset form
+//     Object.keys(form).forEach((key ) => {
+//       form[key] = "";
+//     });
+//     // Show success message (you could use a toast notification here)
+//     alert(
+//       "Thank you for your message! We will get back to you within 24 hours.",
+//     );
+//   }, 2000);
+// };
 
 const toggleFaq = (id: number) => {
   const faq = faqs.value.find((f) => f.id === id);

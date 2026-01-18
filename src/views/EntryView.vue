@@ -66,9 +66,9 @@
           opacity: 0,
         }"
         :enter="{
-          x: typeof window !== 'undefined' ? window.innerWidth + 100 : 1300,
+          x: windowWidth,
           y: shootingStar.endY,
-          opacity: [0, 1, 1, 0],
+          opacity: 1,
           transition: {
             duration: shootingStar.duration,
             ease: 'easeInOut',
@@ -89,14 +89,14 @@
         :key="`particle-${particle.id}`"
         v-motion
         :initial="{
-          y: typeof window !== 'undefined' ? window.innerHeight + 50 : 850,
+          y: windowHeight,
           opacity: 0,
           scale: 0,
         }"
         :enter="{
           y: -50,
-          opacity: [0, particle.opacity, particle.opacity, 0],
-          scale: [0, 1, 1, 0],
+          opacity: particle.opacity,
+          scale: 1,
           x: particle.drift,
           transition: {
             duration: particle.duration,
@@ -237,7 +237,7 @@
           class="relative"
         >
           <p class="text-xl lg:text-2xl text-primary-200 font-medium mb-2">
-            Member of Şahinler Group
+            An Enterprise of Sahinler holding
           </p>
           <div
             class="w-32 h-1 bg-gradient-to-r from-primary-500 to-secondary-800 mx-auto rounded-full"
@@ -334,7 +334,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { ref, onMounted, computed } from "vue";
 import { useRouter } from "vue-router";
 
 const router = useRouter();
@@ -345,12 +345,47 @@ const showBackground = ref(false);
 const logoAnimationClass = ref("logo-fade-in");
 
 // Generate stars for the background
-const stars = ref([]);
-const shootingStars = ref([]);
-const floatingParticles = ref([]);
+interface Star {
+  id: number;
+  x: number;
+  y: number;
+  size: number;
+  opacity: number;
+  color: string;
+  delay: number;
+  animationDelay: number;
+  twinkleDuration: number;
+}
+
+interface ShootingStar {
+  id: number;
+  startY: number;
+  endY: number;
+  duration: number;
+  delay: number;
+  repeatDelay: number;
+  color: string;
+}
+
+interface FloatingParticle {
+  id: number;
+  x: number;
+  size: number;
+  opacity: number;
+  color: string;
+  duration: number;
+  delay: number;
+  repeatDelay: number;
+  drift: number;
+  blur: number;
+}
+
+const stars = ref<Star[]>([]);
+const shootingStars = ref<ShootingStar[]>([]);
+const floatingParticles = ref<FloatingParticle[]>([]);
 
 const generateStars = () => {
-  const starArray = [];
+  const starArray: Star[] = [];
   const colors = ["#ffffff", "#e0f2fe", "#bae6fd", "#7dd3fc", "#38bdf8"];
 
   for (let i = 0; i < 150; i++) {
@@ -366,11 +401,11 @@ const generateStars = () => {
       twinkleDuration: Math.random() * 3 + 2,
     });
   }
-  stars.value = starArray as any;
+  stars.value = starArray;
 };
 
 const generateShootingStars = () => {
-  const shootingArray = [];
+  const shootingArray: ShootingStar[] = [];
   const colors = ["#ffffff", "#0083D5", "#13365C", "#fbbf24"];
 
   for (let i = 0; i < 5; i++) {
@@ -384,11 +419,11 @@ const generateShootingStars = () => {
       color: colors[Math.floor(Math.random() * colors.length)],
     });
   }
-  shootingStars.value = shootingArray as any;
+  shootingStars.value = shootingArray;
 };
 
 const generateFloatingParticles = () => {
-  const particleArray = [];
+  const particleArray: FloatingParticle[] = [];
   const colors = ["#0083D5", "#13365C", "#0074c2", "#4b7bab"];
 
   for (let i = 0; i < 20; i++) {
@@ -405,8 +440,16 @@ const generateFloatingParticles = () => {
       blur: Math.random() * 2 + 1,
     });
   }
-  floatingParticles.value = particleArray as any;
+  floatingParticles.value = particleArray;
 };
+
+const windowWidth = computed(() => {
+  return typeof window !== "undefined" ? window.innerWidth + 100 : 1300;
+});
+
+const windowHeight = computed(() => {
+  return typeof window !== "undefined" ? window.innerHeight + 50 : 850;
+});
 
 const features = [
   {
@@ -467,7 +510,7 @@ onMounted(() => {
       () => {
         router.push("/home");
       },
-      { once: true }
+      { once: true },
     );
   }, 3500);
 });

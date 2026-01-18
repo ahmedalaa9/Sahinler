@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 .bolt
+nul
 
 # Editor directories and files
 .vscode/*

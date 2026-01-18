@@ -8,7 +8,7 @@
     ]"
   >
     <nav class="container-max section-padding">
-      <div class="flex items-center justify-between h-16 lg:h-18">
+      <div class="flex items-center justify-between h-20">
         <!-- Logo -->
         <router-link
           to="/home"
@@ -16,8 +16,8 @@
           @click="closeMobileMenu"
         >
           <img
-            class="w-36 h-14 group-hover:scale-105 transition-all duration-300"
-            src="https://i.postimg.cc/br5R04Xg/Sahinler-logo2.png"
+            class="w-36 h-16 group-hover:scale-105 transition-all duration-300"
+            src="/main-logo.jpeg"
             alt="Şahinler Egypt Logo"
           />
         </router-link>

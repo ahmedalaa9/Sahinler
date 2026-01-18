@@ -20,10 +20,16 @@
           <p
             class="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed"
           >
-            Founded by Kemal Şahin in 1982, Şahinler Holding has grown into a
-            diversified enterprise operating across 7 sectors in 6 countries.
-            Discover how we're leading 71 innovation in garment manufacturing,
-            construction, and hospitality from Egypt.1/
+            Established in 2006, expansion with second factory in 2025 in
+            Alexandria- Egypt, 19 years experience in the field. <br />
+            Private Free Zone company, duty free to USA with QIZ, Europe with
+            Euro-1 & Euro-Med, Africa with Comesa agreement.<br />
+            Serving US & Europe markets by leveraging Egypt’s strong advantages
+            as strategic geographic location, access to major markets,
+            competitive & skilled and young labor workforce, reliable and
+            improving energy supply, stable & supportive government policies.<br />
+            Monthly capacity is 900K ( Knit & Woven )<br />
+            60 minutes to Alexandria Port, 20 minutes to Borg Al-Arab Airport
           </p>
         </div>
       </div>
@@ -415,285 +421,214 @@
           <h2
             class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900 dark:text-white font-heading"
           >
-            Facility Area
+            Main Factory Area
             <span class="heading-gradient">Breakdown</span>
           </h2>
           <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Our 10,000m² facility is strategically designed with 30 production
-            lines to maximize efficiency and productivity across all operational
-            areas.
+            (30 production line)
           </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <!-- Area Breakdown List -->
+        <!-- Key Metrics -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16 max-w-2xl mx-auto"
+        >
+          <div
+            class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md text-center"
+          >
+            <div
+              class="text-lg font-bold text-blue-600 dark:text-blue-400 mb-1"
+            >
+              Total area
+            </div>
+            <div class="text-2xl font-bold text-gray-900 dark:text-white">
+              10,000 m²
+            </div>
+          </div>
+          <div
+            class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md text-center"
+          >
+            <div
+              class="text-lg font-bold text-blue-600 dark:text-blue-400 mb-1"
+            >
+              Closed area
+            </div>
+            <div class="text-2xl font-bold text-gray-900 dark:text-white">
+              6,000 m²
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <!-- Pie Chart Section -->
           <div
             v-motion
             :initial="{ x: -100, opacity: 0 }"
             :visible="{ x: 0, opacity: 1, transition: { duration: 800 } }"
-            class="space-y-6"
+            class="flex justify-center"
           >
-            <div
-              class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg flex items-center justify-between"
-            >
-              <div class="flex items-center space-x-4">
-                <div
-                  class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center"
-                >
-                  <span
-                    class="material-symbols-outlined text-blue-600 dark:text-blue-400"
-                    >manufacturing</span
-                  >
-                </div>
-                <div>
-                  <h3
-                    class="text-lg font-semibold text-gray-900 dark:text-white"
-                  >
-                    Sewing & Ironing & Q.C & Packing Area
-                  </h3>
-                  <p class="text-sm text-gray-600 dark:text-gray-300">
-                    Main production operations
-                  </p>
-                </div>
-              </div>
-              <div class="text-right">
-                <div
-                  class="text-2xl font-bold text-blue-600 dark:text-blue-400"
-                >
-                  4220m²
-                </div>
-                <div class="text-sm text-gray-500">65% of facility</div>
-              </div>
-            </div>
-
-            <div
-              class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg flex items-center justify-between"
-            >
-              <div class="flex items-center space-x-4">
-                <div
-                  class="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-lg flex items-center justify-center"
-                >
-                  <span
-                    class="material-symbols-outlined text-gray-600 dark:text-gray-400"
-                    >business</span
-                  >
-                </div>
-                <div>
-                  <h3
-                    class="text-lg font-semibold text-gray-900 dark:text-white"
-                  >
-                    Management
-                  </h3>
-                  <p class="text-sm text-gray-600 dark:text-gray-300">
-                    Administrative offices
-                  </p>
-                </div>
-              </div>
-              <div class="text-right">
-                <div
-                  class="text-2xl font-bold text-gray-600 dark:text-gray-400"
-                >
-                  1240m²
-                </div>
-                <div class="text-sm text-gray-500">19% of facility</div>
-              </div>
-            </div>
-
-            <div
-              class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg flex items-center justify-between"
-            >
-              <div class="flex items-center space-x-4">
-                <div
-                  class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center"
-                >
-                  <span
-                    class="material-symbols-outlined text-green-600 dark:text-green-400"
-                    >local_shipping</span
-                  >
-                </div>
-                <div>
-                  <h3
-                    class="text-lg font-semibold text-gray-900 dark:text-white"
-                  >
-                    Shipping Warehouse
-                  </h3>
-                  <p class="text-sm text-gray-600 dark:text-gray-300">
-                    Logistics and distribution
-                  </p>
-                </div>
-              </div>
-              <div class="text-right">
-                <div
-                  class="text-2xl font-bold text-green-600 dark:text-green-400"
-                >
-                  520m²
-                </div>
-                <div class="text-sm text-gray-500">8% of facility</div>
-              </div>
-            </div>
-
-            <div
-              class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg flex items-center justify-between"
-            >
-              <div class="flex items-center space-x-4">
-                <div
-                  class="w-12 h-12 bg-yellow-100 dark:bg-yellow-900 rounded-lg flex items-center justify-center"
-                >
-                  <span
-                    class="material-symbols-outlined text-yellow-600 dark:text-yellow-400"
-                    >inventory</span
-                  >
-                </div>
-                <div>
-                  <h3
-                    class="text-lg font-semibold text-gray-900 dark:text-white"
-                  >
-                    Accessory Warehouse
-                  </h3>
-                  <p class="text-sm text-gray-600 dark:text-gray-300">
-                    Materials and supplies
-                  </p>
-                </div>
-              </div>
-              <div class="text-right">
-                <div
-                  class="text-2xl font-bold text-yellow-600 dark:text-yellow-400"
-                >
-                  300m²
-                </div>
-                <div class="text-sm text-gray-500">4% of facility</div>
-              </div>
-            </div>
-
-            <div
-              class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg flex items-center justify-between"
-            >
-              <div class="flex items-center space-x-4">
-                <div
-                  class="w-12 h-12 bg-orange-100 dark:bg-orange-900 rounded-lg flex items-center justify-center"
-                >
-                  <span
-                    class="material-symbols-outlined text-orange-600 dark:text-orange-400"
-                    >precision_manufacturing</span
-                  >
-                </div>
-                <div>
-                  <h3
-                    class="text-lg font-semibold text-gray-900 dark:text-white"
-                  >
-                    Machine Warehouse
-                  </h3>
-                  <p class="text-sm text-gray-600 dark:text-gray-300">
-                    Equipment storage
-                  </p>
-                </div>
-              </div>
-              <div class="text-right">
-                <div
-                  class="text-2xl font-bold text-orange-600 dark:text-orange-400"
-                >
-                  200m²
-                </div>
-                <div class="text-sm text-gray-500">3% of facility</div>
-              </div>
-            </div>
-
-            <div
-              class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg flex items-center justify-between"
-            >
-              <div class="flex items-center space-x-4">
-                <div
-                  class="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center"
-                >
-                  <span
-                    class="material-symbols-outlined text-purple-600 dark:text-purple-400"
-                    >verified</span
-                  >
-                </div>
-                <div>
-                  <h3
-                    class="text-lg font-semibold text-gray-900 dark:text-white"
-                  >
-                    Second Quality Store
-                  </h3>
-                  <p class="text-sm text-gray-600 dark:text-gray-300">
-                    Quality control storage
-                  </p>
-                </div>
-              </div>
-              <div class="text-right">
-                <div
-                  class="text-2xl font-bold text-purple-600 dark:text-purple-400"
-                >
-                  41m²
-                </div>
-                <div class="text-sm text-gray-500">1% of facility</div>
-              </div>
-            </div>
+            <img src="/public/Sahinler-about-breakdown.png" alt="" />
           </div>
 
-          <!-- Visual Summary -->
+          <!-- Facility Details List -->
           <div
             v-motion
             :initial="{ x: 100, opacity: 0 }"
             :visible="{
               x: 0,
               opacity: 1,
-              transition: { duration: 800, delay: 300 },
+              transition: { duration: 800, delay: 200 },
             }"
-            class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg"
+            class="space-y-4"
           >
-            <h3
-              class="text-2xl font-bold mb-6 text-gray-900 dark:text-white text-center"
+            <!-- Sewing & Ironing -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
             >
-              Facility Overview
-            </h3>
-            <div class="space-y-4">
-              <div
-                class="flex justify-between items-center p-4 bg-primary-50 dark:bg-primary-900/20 rounded-lg"
-              >
-                <span
-                  class="font-semibold text-primary-700 dark:text-primary-300"
-                  >Total Area</span
+              <div class="flex items-center gap-4 p-5">
+                <div
+                  class="flex-shrink-0 flex items-center justify-center w-14 h-14 bg-orange-500 rounded-lg"
                 >
-                <span
-                  class="text-2xl font-bold text-primary-600 dark:text-primary-400"
-                  >10,000m²</span
-                >
-              </div>
-              <div
-                class="flex justify-between items-center p-4 bg-secondary-50 dark:bg-secondary-900/20 rounded-lg"
-              >
-                <span
-                  class="font-semibold text-secondary-700 dark:text-secondary-300"
-                  >Closed Area</span
-                >
-                <span
-                  class="text-2xl font-bold text-secondary-600 dark:text-secondary-400"
-                  >6,000m²</span
-                >
-              </div>
-              <div
-                class="flex justify-between items-center p-4 bg-accent-50 dark:bg-accent-900/20 rounded-lg"
-              >
-                <span class="font-semibold text-accent-700 dark:text-accent-300"
-                  >Production Lines</span
-                >
-                <span
-                  class="text-2xl font-bold text-accent-600 dark:text-accent-400"
-                  >30</span
-                >
+                  <span class="material-symbols-outlined text-white text-2xl"
+                    >checkroom</span
+                  >
+                </div>
+                <div class="flex-1">
+                  <h4
+                    class="text-base font-semibold text-gray-900 dark:text-white"
+                  >
+                    Sewing & Ironing & Q.C & Packing Area
+                  </h4>
+                </div>
+                <div class="text-right flex-shrink-0">
+                  <div class="text-lg font-bold text-orange-500">4220 m²</div>
+                </div>
               </div>
             </div>
+
+            <!-- Accessory Warehouse -->
             <div
-              class="mt-6 p-4 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg text-white text-center"
+              class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
             >
-              <p class="text-lg font-semibold">
-                Optimized for Maximum Efficiency
-              </p>
-              <p class="text-sm opacity-90">
-                Strategic layout for seamless production flow
-              </p>
+              <div class="flex items-center gap-4 p-5">
+                <div
+                  class="flex-shrink-0 flex items-center justify-center w-14 h-14 bg-yellow-400 rounded-lg"
+                >
+                  <span class="material-symbols-outlined text-white text-2xl"
+                    >checkroom</span
+                  >
+                </div>
+                <div class="flex-1">
+                  <h4
+                    class="text-base font-semibold text-gray-900 dark:text-white"
+                  >
+                    Accessory Warehouse
+                  </h4>
+                </div>
+                <div class="text-right flex-shrink-0">
+                  <div class="text-lg font-bold text-yellow-400">300 m²</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Shipping Warehouse -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
+            >
+              <div class="flex items-center gap-4 p-5">
+                <div
+                  class="flex-shrink-0 flex items-center justify-center w-14 h-14 bg-green-500 rounded-lg"
+                >
+                  <span class="material-symbols-outlined text-white text-2xl"
+                    >local_shipping</span
+                  >
+                </div>
+                <div class="flex-1">
+                  <h4
+                    class="text-base font-semibold text-gray-900 dark:text-white"
+                  >
+                    Shipping Warehouse
+                  </h4>
+                </div>
+                <div class="text-right flex-shrink-0">
+                  <div class="text-lg font-bold text-green-500">520 m²</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Management -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
+            >
+              <div class="flex items-center gap-4 p-5">
+                <div
+                  class="flex-shrink-0 flex items-center justify-center w-14 h-14 bg-blue-600 rounded-lg"
+                >
+                  <span class="material-symbols-outlined text-white text-2xl"
+                    >settings</span
+                  >
+                </div>
+                <div class="flex-1">
+                  <h4
+                    class="text-base font-semibold text-gray-900 dark:text-white"
+                  >
+                    Management
+                  </h4>
+                </div>
+                <div class="text-right flex-shrink-0">
+                  <div class="text-lg font-bold text-blue-600">1240 m²</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Machine Warehouse -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
+            >
+              <div class="flex items-center gap-4 p-5">
+                <div
+                  class="flex-shrink-0 flex items-center justify-center w-14 h-14 bg-amber-700 rounded-lg"
+                >
+                  <span class="material-symbols-outlined text-white text-2xl"
+                    >precision_manufacturing</span
+                  >
+                </div>
+                <div class="flex-1">
+                  <h4
+                    class="text-base font-semibold text-gray-900 dark:text-white"
+                  >
+                    Machine Warehouse
+                  </h4>
+                </div>
+                <div class="text-right flex-shrink-0">
+                  <div class="text-lg font-bold text-amber-700">200 m²</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Quality Store -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
+            >
+              <div class="flex items-center gap-4 p-5">
+                <div
+                  class="flex-shrink-0 flex items-center justify-center w-14 h-14 bg-gray-600 rounded-lg"
+                >
+                  <span class="material-symbols-outlined text-white text-2xl"
+                    >inventory_2</span
+                  >
+                </div>
+                <div class="flex-1">
+                  <h4
+                    class="text-base font-semibold text-gray-900 dark:text-white"
+                  >
+                    Second Quality Store
+                  </h4>
+                </div>
+                <div class="text-right flex-shrink-0">
+                  <div class="text-lg font-bold text-gray-600">41 m²</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -914,7 +849,7 @@
         </div>
 
         <!-- Sector Integration Summary -->
-        <div
+        <!-- <div
           class="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-3xl p-8 lg:p-12 text-white"
         >
           <div class="text-center">
@@ -946,12 +881,14 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
     <!-- Mission & Vision Section -->
-    <section class="py-20">
+    <section
+      class="py-20 bg-gradient-to-br from-blue-50 to-teal-50 dark:from-gray-900 dark:to-gray-800"
+    >
       <div class="container-max section-padding">
         <div
           v-motion
@@ -962,163 +899,111 @@
           <h2
             class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900 dark:text-white font-heading"
           >
-            Our Purpose & Vision
+            Vision, Mission
+            <span class="heading-gradient">&amp; Values</span>
           </h2>
           <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Driven by purpose, guided by values, and committed to creating a
-            sustainable future for textile manufacturing.
+            Our commitment to excellence, innovation, and sustainable growth
+            across all our operations.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div class="max-w-4xl mx-auto space-y-6">
+          <!-- Vision Card -->
           <div
             v-motion
             :initial="{ x: -100, opacity: 0 }"
             :visible="{ x: 0, opacity: 1, transition: { duration: 800 } }"
-            class="space-y-8"
+            class="bg-gradient-to-r from-blue-600 to-teal-600 dark:from-blue-700 dark:to-teal-700 rounded-2xl p-8 lg:p-12 text-white shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
-            <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
-              <div class="flex items-center mb-6">
+            <div class="flex items-start gap-8">
+              <div class="flex-shrink-0">
                 <div
-                  class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center mr-4"
+                  class="flex items-center justify-center h-16 w-16 rounded-2xl bg-white/20 backdrop-blur-sm"
                 >
-                  <span
-                    class="material-symbols-outlined text-primary-600 dark:text-primary-400"
-                    >flag</span
-                  >
-                </div>
-                <h2
-                  class="text-3xl font-bold text-gray-900 dark:text-white font-heading"
-                >
-                  Our Mission
-                </h2>
-              </div>
-              <p
-                class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
-              >
-                Our mission is to build cultural and economic bridge between
-                continents and make employees proud to be part of Şahinler Egypt
-                which believe in the team work, and to get our customers on the
-                whole world more pleased with this high motivation and following
-                the market technology.
-              </p>
-            </div>
-
-            <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
-              <div class="flex items-center mb-6">
-                <div
-                  class="w-12 h-12 bg-secondary-100 dark:bg-secondary-900 rounded-lg flex items-center justify-center mr-4"
-                >
-                  <span
-                    class="material-symbols-outlined text-secondary-600 dark:text-secondary-400"
+                  <span class="material-symbols-outlined text-white text-3xl"
                     >visibility</span
                   >
                 </div>
-                <h2
-                  class="text-3xl font-bold text-gray-900 dark:text-white font-heading"
-                >
-                  Our Vision
-                </h2>
               </div>
-              <p
-                class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
-              >
-                Our vision is to move our group to the top list of the world by
-                presenting our excellent products which put color in our life
-                with the best quality and service in most convenient price.
-              </p>
+              <div class="flex-1">
+                <h3 class="text-3xl lg:text-4xl font-bold mb-4">Vision</h3>
+                <p class="text-lg text-white/95 leading-relaxed">
+                  Our vision is to move our group to the top list of the world
+                  by presenting our excellent products which put color in our
+                  life with the best quality and service in most convenient
+                  price.
+                </p>
+              </div>
             </div>
           </div>
 
+          <!-- Mission Card -->
           <div
             v-motion
-            :initial="{ x: 100, opacity: 0 }"
+            :initial="{ x: -100, opacity: 0 }"
             :visible="{
               x: 0,
               opacity: 1,
-              transition: { duration: 800, delay: 300 },
+              transition: { duration: 800, delay: 200 },
             }"
-            class="space-y-8"
+            class="bg-gradient-to-r from-teal-600 to-cyan-600 dark:from-teal-700 dark:to-cyan-700 rounded-2xl p-8 lg:p-12 text-white shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
-            <!-- Manufacturing Capabilities -->
-            <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
-              <h3 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
-                Manufacturing Excellence
-              </h3>
-              <div class="space-y-4">
-                <div class="flex items-center space-x-3">
-                  <span class="material-symbols-outlined text-primary-500"
-                    >check_circle</span
-                  >
-                  <span class="text-gray-600 dark:text-gray-300"
-                    >400,000 pieces monthly production capacity</span
-                  >
-                </div>
-                <div class="flex items-center space-x-3">
-                  <span class="material-symbols-outlined text-primary-500"
-                    >check_circle</span
-                  >
-                  <span class="text-gray-600 dark:text-gray-300"
-                    >Advanced automation and quality control systems</span
-                  >
-                </div>
-                <div class="flex items-center space-x-3">
-                  <span class="material-symbols-outlined text-primary-500"
-                    >check_circle</span
-                  >
-                  <span class="text-gray-600 dark:text-gray-300"
-                    >Comprehensive product range from basics to luxury</span
-                  >
-                </div>
-                <div class="flex items-center space-x-3">
-                  <span class="material-symbols-outlined text-primary-500"
-                    >check_circle</span
-                  >
-                  <span class="text-gray-600 dark:text-gray-300"
-                    >Sustainable and eco-friendly manufacturing processes</span
+            <div class="flex items-start gap-8">
+              <div class="flex-shrink-0">
+                <div
+                  class="flex items-center justify-center h-16 w-16 rounded-2xl bg-white/20 backdrop-blur-sm"
+                >
+                  <span class="material-symbols-outlined text-white text-3xl"
+                    >flag</span
                   >
                 </div>
               </div>
+              <div class="flex-1">
+                <h3 class="text-3xl lg:text-4xl font-bold mb-4">Mission</h3>
+                <p class="text-lg text-white/95 leading-relaxed">
+                  Our mission is to build cultural and economic bridge between
+                  continents and make employees proud to be part of Şahinler
+                  Egypt which believe in the team work, and to get our customers
+                  on the whole world more pleased with this high motivation and
+                  following the market technology.
+                </p>
+              </div>
             </div>
+          </div>
 
-            <!-- Strategic Advantages -->
-            <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
-              <h3 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
-                Strategic Advantages
-              </h3>
-              <div class="space-y-4">
-                <div class="flex items-center space-x-3">
-                  <span class="material-symbols-outlined text-secondary-500"
-                    >location_on</span
-                  >
-                  <span class="text-gray-600 dark:text-gray-300"
-                    >Prime location for Middle East & Africa markets</span
-                  >
-                </div>
-                <div class="flex items-center space-x-3">
-                  <span class="material-symbols-outlined text-secondary-500"
-                    >schedule</span
-                  >
-                  <span class="text-gray-600 dark:text-gray-300"
-                    >Faster delivery times to key markets</span
+          <!-- Values Card -->
+          <div
+            v-motion
+            :initial="{ x: -100, opacity: 0 }"
+            :visible="{
+              x: 0,
+              opacity: 1,
+              transition: { duration: 800, delay: 400 },
+            }"
+            class="bg-gradient-to-r from-cyan-600 to-blue-600 dark:from-cyan-700 dark:to-blue-700 rounded-2xl p-8 lg:p-12 text-white shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="flex items-start gap-8">
+              <div class="flex-shrink-0">
+                <div
+                  class="flex items-center justify-center h-16 w-16 rounded-2xl bg-white/20 backdrop-blur-sm"
+                >
+                  <span class="material-symbols-outlined text-white text-3xl"
+                    >public</span
                   >
                 </div>
-                <div class="flex items-center space-x-3">
-                  <span class="material-symbols-outlined text-secondary-500"
-                    >savings</span
-                  >
-                  <span class="text-gray-600 dark:text-gray-300"
-                    >Competitive cost structure and pricing</span
-                  >
-                </div>
-                <div class="flex items-center space-x-3">
-                  <span class="material-symbols-outlined text-secondary-500"
-                    >support_agent</span
-                  >
-                  <span class="text-gray-600 dark:text-gray-300"
-                    >Dedicated customer service and support</span
-                  >
-                </div>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-3xl lg:text-4xl font-bold mb-4">Values</h3>
+                <p class="text-lg text-white/95 leading-relaxed">
+                  We are committed to conducting our business with transparency,
+                  fairness and integrity, demonstrating diligence, efficiency
+                  and discipline, fostering respect and positive communication,
+                  promoting teamwork and adaptability, prioritizing our
+                  customers, embracing environmental responsibility and
+                  collaborating with partners to create a lasting, positive
+                  impact on our planet.
+                </p>
               </div>
             </div>
           </div>
@@ -1126,222 +1011,242 @@
       </div>
     </section>
 
-    <!-- 2025 Şahinler Priorities Section -->
-    <section class="py-20">
+    <!-- 2026 Şahinler Egypt Priorities Section -->
+    <section
+      class="py-20 bg-gradient-to-br from-blue-100 to-blue-50 dark:from-gray-900 dark:to-gray-800"
+    >
       <div class="container-max section-padding">
         <div
           v-motion
           :initial="{ y: 50, opacity: 0 }"
           :visible="{ y: 0, opacity: 1, transition: { duration: 800 } }"
-          class="text-center mb-16"
+          class="text-center mb-20"
         >
           <h2
             class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900 dark:text-white font-heading"
           >
-            2025 Strategic
+            2026 Şahinler Egypt
             <span class="heading-gradient">Priorities</span>
           </h2>
-          <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Our roadmap for growth, innovation, and operational excellence in
-            2025, focusing on expansion, digitalization, and sustainability
-            initiatives.
-          </p>
         </div>
 
-        <div class="relative">
-          <!-- Timeline Line -->
-          <div
-            class="absolute top-1/2 left-0 right-0 h-2 bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500 rounded-full transform -translate-y-1/2"
-          ></div>
+        <!-- Timeline -->
+        <div class="relative w-full pb-8">
+          <svg
+            class="w-full h-auto min-h-96"
+            viewBox="0 0 1200 350"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <!-- Connecting bars -->
+            <g class="connecting-bars">
+              <!-- Bar 1-2 (Purple) -->
+              <rect x="140" y="145" width="160" height="20" fill="#A855F7" />
+              <!-- Bar 2-3 (Red) -->
+              <rect x="340" y="145" width="160" height="20" fill="#EF4444" />
+              <!-- Bar 3-4 (Orange) -->
+              <rect x="540" y="145" width="160" height="20" fill="#F97316" />
+              <!-- Bar 4-5 (Purple) -->
+              <rect x="740" y="145" width="160" height="20" fill="#A855F7" />
+              <!-- Bar 5-6 (Yellow) -->
+              <rect x="940" y="145" width="160" height="20" fill="#FBBF24" />
+            </g>
 
-          <div class="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
-            <!-- Priority 1 -->
-            <div
-              v-motion
-              :initial="{ y: 50, opacity: 0 }"
-              :visible="{
-                y: 0,
-                opacity: 1,
-                transition: { duration: 600, delay: 200 },
-              }"
-              class="text-center"
-            >
-              <div class="relative mb-6">
-                <div
-                  class="w-16 h-16 bg-purple-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto relative z-10 shadow-lg"
-                >
-                  01
-                </div>
-              </div>
-              <div
-                class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+            <!-- Circle 1 -->
+            <g class="priority-item">
+              <circle
+                cx="140"
+                cy="155"
+                r="35"
+                fill="white"
+                stroke="#A855F7"
+                stroke-width="4"
+              />
+              <text
+                x="140"
+                y="165"
+                text-anchor="middle"
+                font-size="28"
+                font-weight="bold"
+                fill="#6B7280"
               >
-                <h3
-                  class="text-lg font-bold mb-3 text-gray-900 dark:text-white"
-                >
-                  Finalize New Site Construction
-                </h3>
-                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
-                  100% to start operations till end of June 2025 (Done)
-                </p>
-                <div
-                  class="text-xs text-purple-600 dark:text-purple-400 font-semibold"
-                >
-                  ✓ COMPLETED
-                </div>
-              </div>
-            </div>
+                01
+              </text>
+            </g>
 
-            <!-- Priority 2 -->
-            <div
-              v-motion
-              :initial="{ y: 50, opacity: 0 }"
-              :visible="{
-                y: 0,
-                opacity: 1,
-                transition: { duration: 600, delay: 400 },
-              }"
-              class="text-center"
-            >
-              <div class="relative mb-6">
-                <div
-                  class="w-16 h-16 bg-red-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto relative z-10 shadow-lg"
-                >
-                  02
-                </div>
-              </div>
-              <div
-                class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+            <!-- Circle 2 -->
+            <g class="priority-item">
+              <circle
+                cx="340"
+                cy="155"
+                r="35"
+                fill="white"
+                stroke="#EF4444"
+                stroke-width="4"
+              />
+              <text
+                x="340"
+                y="165"
+                text-anchor="middle"
+                font-size="28"
+                font-weight="bold"
+                fill="#6B7280"
               >
-                <h3
-                  class="text-lg font-bold mb-3 text-gray-900 dark:text-white"
-                >
-                  Accelerate Digitalization
-                </h3>
-                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
-                  Project to reach 100% till end of 2025
-                </p>
-                <div
-                  class="text-xs text-red-600 dark:text-red-400 font-semibold"
-                >
-                  IN PROGRESS
-                </div>
-              </div>
-            </div>
+                02
+              </text>
+            </g>
 
-            <!-- Priority 3 -->
-            <div
-              v-motion
-              :initial="{ y: 50, opacity: 0 }"
-              :visible="{
-                y: 0,
-                opacity: 1,
-                transition: { duration: 600, delay: 600 },
-              }"
-              class="text-center"
-            >
-              <div class="relative mb-6">
-                <div
-                  class="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto relative z-10 shadow-lg"
-                >
-                  03
-                </div>
-              </div>
-              <div
-                class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+            <!-- Circle 3 -->
+            <g class="priority-item">
+              <circle
+                cx="540"
+                cy="155"
+                r="35"
+                fill="white"
+                stroke="#F97316"
+                stroke-width="4"
+              />
+              <text
+                x="540"
+                y="165"
+                text-anchor="middle"
+                font-size="28"
+                font-weight="bold"
+                fill="#6B7280"
               >
-                <h3
-                  class="text-lg font-bold mb-3 text-gray-900 dark:text-white"
-                >
-                  Solar Panels Study
-                </h3>
-                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
-                  Full implementation study in new site and feasibility in old
-                  site
-                </p>
-                <div
-                  class="text-xs text-orange-600 dark:text-orange-400 font-semibold"
-                >
-                  PLANNING
-                </div>
-              </div>
-            </div>
+                03
+              </text>
+            </g>
 
-            <!-- Priority 4 -->
-            <div
-              v-motion
-              :initial="{ y: 50, opacity: 0 }"
-              :visible="{
-                y: 0,
-                opacity: 1,
-                transition: { duration: 600, delay: 800 },
-              }"
-              class="text-center"
-            >
-              <div class="relative mb-6">
-                <div
-                  class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto relative z-10 shadow-lg"
-                >
-                  04
-                </div>
-              </div>
-              <div
-                class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+            <!-- Circle 4 -->
+            <g class="priority-item">
+              <circle
+                cx="740"
+                cy="155"
+                r="35"
+                fill="white"
+                stroke="#A855F7"
+                stroke-width="4"
+              />
+              <text
+                x="740"
+                y="165"
+                text-anchor="middle"
+                font-size="28"
+                font-weight="bold"
+                fill="#6B7280"
               >
-                <h3
-                  class="text-lg font-bold mb-3 text-gray-900 dark:text-white"
-                >
-                  Facility Expansion
-                </h3>
-                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
-                  Move cutting & all warehouses to new land (4595 m2) beside us
-                  and have more space
-                </p>
-                <div
-                  class="text-xs text-purple-600 dark:text-purple-400 font-semibold"
-                >
-                  PLANNED
-                </div>
-              </div>
-            </div>
+                04
+              </text>
+            </g>
 
-            <!-- Priority 5 -->
-            <div
-              v-motion
-              :initial="{ y: 50, opacity: 0 }"
-              :visible="{
-                y: 0,
-                opacity: 1,
-                transition: { duration: 600, delay: 1000 },
-              }"
-              class="text-center"
-            >
-              <div class="relative mb-6">
-                <div
-                  class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto relative z-10 shadow-lg"
-                >
-                  05
-                </div>
-              </div>
-              <div
-                class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+            <!-- Circle 5 -->
+            <g class="priority-item">
+              <circle
+                cx="940"
+                cy="155"
+                r="35"
+                fill="white"
+                stroke="#60A5FA"
+                stroke-width="4"
+              />
+              <text
+                x="940"
+                y="165"
+                text-anchor="middle"
+                font-size="28"
+                font-weight="bold"
+                fill="#6B7280"
               >
-                <h3
-                  class="text-lg font-bold mb-3 text-gray-900 dark:text-white"
-                >
-                  Complete Renovation
-                </h3>
-                <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
-                  Complete all renovation in old side for enhanced efficiency
-                </p>
-                <div
-                  class="text-xs text-blue-600 dark:text-blue-400 font-semibold"
-                >
-                  SCHEDULED
-                </div>
-              </div>
-            </div>
-          </div>
+                05
+              </text>
+            </g>
+
+            <!-- Text 1 -->
+            <text
+              x="140"
+              y="240"
+              text-anchor="middle"
+              font-size="14"
+              font-weight="600"
+              fill="#1F2937"
+              class="priority-text"
+            >
+              <tspan x="140" dy="0">Finish basement</tspan>
+              <tspan x="140" dy="16">construction and move</tspan>
+              <tspan x="140" dy="16">all warehouses to the</tspan>
+              <tspan x="140" dy="16">land (4595 m2) beside</tspan>
+              <tspan x="140" dy="16">us to have more</tspan>
+              <tspan x="140" dy="16">space for decreasing</tspan>
+              <tspan x="140" dy="16">the overload</tspan>
+            </text>
+
+            <!-- Text 2 -->
+            <text
+              x="340"
+              y="240"
+              text-anchor="middle"
+              font-size="14"
+              font-weight="600"
+              fill="#1F2937"
+              class="priority-text"
+            >
+              <tspan x="340" dy="0">After moving the</tspan>
+              <tspan x="340" dy="16">warehouses to the</tspan>
+              <tspan x="340" dy="16">land beside us, to</tspan>
+              <tspan x="340" dy="16">increase production</tspan>
+              <tspan x="340" dy="16">lines as +10 in main</tspan>
+              <tspan x="340" dy="16">factory</tspan>
+            </text>
+
+            <!-- Text 3 -->
+            <text
+              x="540"
+              y="240"
+              text-anchor="middle"
+              font-size="14"
+              font-weight="600"
+              fill="#1F2937"
+              class="priority-text"
+            >
+              <tspan x="540" dy="0">Accelerate</tspan>
+              <tspan x="540" dy="16">Digitalization</tspan>
+              <tspan x="540" dy="16">Project to</tspan>
+              <tspan x="540" dy="16">reach 100% till</tspan>
+              <tspan x="540" dy="16">end of 2026</tspan>
+              <tspan x="540" dy="16">(in process)</tspan>
+            </text>
+
+            <!-- Text 4 -->
+            <text
+              x="740"
+              y="240"
+              text-anchor="middle"
+              font-size="14"
+              font-weight="600"
+              fill="#1F2937"
+              class="priority-text"
+            >
+              <tspan x="740" dy="0">Full Study for</tspan>
+              <tspan x="740" dy="16">Solar Panels</tspan>
+              <tspan x="740" dy="16">implementation</tspan>
+              <tspan x="740" dy="16">in the new site</tspan>
+            </text>
+
+            <!-- Text 5 -->
+            <text
+              x="940"
+              y="240"
+              text-anchor="middle"
+              font-size="14"
+              font-weight="600"
+              fill="#1F2937"
+              class="priority-text"
+            >
+              <tspan x="940" dy="0">Complete all</tspan>
+              <tspan x="940" dy="16">the renovation</tspan>
+              <tspan x="940" dy="16">in main side</tspan>
+            </text>
+          </svg>
         </div>
 
         <!-- Strategic Goals Summary -->
@@ -1395,7 +1300,7 @@
     </section>
 
     <!-- Company Timeline -->
-    <section class="py-20">
+    <!-- <section class="py-20">
       <div class="container-max section-padding">
         <div
           v-motion
@@ -1416,7 +1321,6 @@
         </div>
 
         <div class="relative">
-          <!-- Timeline Line -->
           <div
             class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-primary-500 to-secondary-500 rounded-full"
           ></div>
@@ -1435,12 +1339,10 @@
               class="relative flex items-center"
               :class="index % 2 === 0 ? 'justify-start' : 'justify-end'"
             >
-              <!-- Timeline Node -->
               <div
                 class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-500 rounded-full border-4 border-white dark:border-gray-900 shadow-lg z-10"
               ></div>
 
-              <!-- Content Card -->
               <div
                 class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg max-w-md hover:shadow-xl transition-shadow duration-300"
                 :class="index % 2 === 0 ? 'mr-auto pr-16' : 'ml-auto pl-16'"
@@ -1474,10 +1376,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Values Section -->
-    <section class="py-20 bg-gray-50 dark:bg-gray-900">
+    <!-- <section class="py-20 bg-gray-50 dark:bg-gray-900">
       <div class="container-max section-padding">
         <div
           v-motion
@@ -1526,7 +1428,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Competitive Advantages Section -->
     <section class="py-20">

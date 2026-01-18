@@ -72,7 +72,7 @@
               <img
                 :src="image.src"
                 :alt="image.title"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 max-h-[200px]"
               />
               <div
                 class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
@@ -319,6 +319,27 @@ const galleryImages = [
   {
     id: 154,
     src: "/gallery/factory-floor2.png",
+    title: "Production Line Overview",
+    description: "State-of-the-art production line with automated systems",
+    category: "Factory Floor",
+  },
+  {
+    id: 1254,
+    src: "/gallery/factory-floor4.jpeg",
+    title: "Production Line Overview",
+    description: "State-of-the-art production line with automated systems",
+    category: "Factory Floor",
+  },
+  {
+    id: 1544,
+    src: "/gallery/factory-floor5.jpeg",
+    title: "Production Line Overview",
+    description: "State-of-the-art production line with automated systems",
+    category: "Factory Floor",
+  },
+  {
+    id: 1154,
+    src: "/gallery/factory-floor6.jpeg",
     title: "Production Line Overview",
     description: "State-of-the-art production line with automated systems",
     category: "Factory Floor",

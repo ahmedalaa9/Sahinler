@@ -140,7 +140,7 @@
                     >factory</span
                   >
                 </div>
-                <div class="text-2xl lg:text-3xl font-bold text-white">50+</div>
+                <div class="text-2xl lg:text-3xl font-bold text-white">60+</div>
                 <div class="text-sm text-white/70">Production Lines</div>
               </div>
               <div class="text-center">
@@ -152,7 +152,7 @@
                   >
                 </div>
                 <div class="text-2xl lg:text-3xl font-bold text-white">
-                  2000+
+                  2500+
                 </div>
                 <div class="text-sm text-white/70">Skilled Workers</div>
               </div>
@@ -201,34 +201,34 @@
               </div>
 
               <!-- Stats Grid -->
-              <div class="grid grid-cols-2 gap-6">
-                <div class="bg-primary-50 rounded-2xl p-6 text-center">
-                  <div class="text-3xl font-bold text-primary-600 mb-1">
-                    98%
-                  </div>
-                  <div class="text-sm text-primary-700 font-medium">
-                    Quality Score
-                  </div>
+              <!-- <div class="grid grid-cols-2 gap-6"> -->
+              <div class="bg-primary-50 rounded-2xl p-6 text-center">
+                <div class="text-3xl font-bold text-primary-600 mb-1">98%</div>
+                <div class="text-sm text-primary-700 font-medium mx-[100px]">
+                  Quality Score
                 </div>
-                <div class="bg-secondary-50 rounded-2xl p-6 text-center">
+              </div>
+              <!-- <div class="bg-secondary-50 rounded-2xl p-6 text-center">
                   <div class="text-3xl font-bold text-secondary-800 mb-1">
                     24/7
                   </div>
                   <div class="text-sm text-secondary-800 font-medium">
                     Operations
                   </div>
-                </div>
-              </div>
+                </div> -->
+              <!-- </div> -->
 
               <!-- Additional Info -->
               <div class="mt-8 pt-6 border-t border-gray-200">
                 <div class="flex items-center justify-between text-sm">
                   <span class="text-gray-600">Annual Capacity</span>
-                  <span class="font-semibold text-gray-900">50M+ Units</span>
+                  <span class="font-semibold text-gray-900">20M+ Units</span>
                 </div>
                 <div class="flex items-center justify-between text-sm mt-2">
-                  <span class="text-gray-600">Global Ranking</span>
-                  <span class="font-semibold text-gray-900">#18 Worldwide</span>
+                  <span class="text-gray-600">Ranking</span>
+                  <span class="font-semibold text-gray-900"
+                    >#20 Egypt Ranking</span
+                  >
                 </div>
               </div>
             </div>
@@ -296,7 +296,7 @@
               opacity: 1,
               transition: { duration: 600, delay: 200 },
             }"
-            :value="50"
+            :value="20"
             label="Million Units"
             suffix="M+"
             class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
@@ -309,7 +309,7 @@
               opacity: 1,
               transition: { duration: 600, delay: 400 },
             }"
-            :value="18"
+            :value="20"
             label="Global Ranking"
             suffix=""
             class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
@@ -335,8 +335,8 @@
               opacity: 1,
               transition: { duration: 600, delay: 800 },
             }"
-            :value="100"
-            label="Global Clients"
+            :value="20"
+            label="Clients"
             suffix="+"
             class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
           />
@@ -404,11 +404,11 @@
                 alt="Quality Control"
                 class="rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 mt-8 h-[250px]"
               />
-              <!-- <img
-                src="/public/gallery/machine-2.jpeg"
+              <img
+                src="/public/gallery/machine-6.jpeg"
                 alt="Quality Control"
                 class="rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 mt-8"
-              /> -->
+              />
             </div>
             <div
               class="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-primary-500 to-secondary-800 rounded-2xl opacity-20 animate-float"
@@ -456,7 +456,7 @@
               <img
                 :src="category.image"
                 :alt="category.name"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 max-h-[130px]"
               />
             </div>
             <div class="p-6">
@@ -543,17 +543,17 @@ const productCategories = [
   {
     name: "Woven",
     description: "High-quality woven fabrics for diverse applications",
-    image: "/products/product-2.jpeg",
+    image: "/products/Woven.jpeg",
   },
   {
     name: "Embroidery",
     description: "Intricate embroidered designs with precision and artistry",
-    image: "/products/product-1.jpeg",
+    image: "/products/embroidered.png",
   },
   {
-    name: "Sublimation",
-    description: "Advanced sublimation printing for vibrant, lasting colors",
-    image: "/products/product-2.jpeg",
+    name: "SROQUE",
+    description: "SROQUE Automatic Screen Printing Machine",
+    image: "/products/SROQUE.png",
   },
 ];
 </script>

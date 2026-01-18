@@ -75,52 +75,127 @@
           </div>
         </div>
 
-        <!-- Client Categories -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div
-            v-for="(category, index) in clientCategories"
-            :key="category.title"
-            v-motion
-            :initial="{ y: 50, opacity: 0 }"
-            :visible="{
-              y: 0,
-              opacity: 1,
-              transition: { duration: 600, delay: index * 200 },
-            }"
-            class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
-          >
+        <!-- Product Ranges Section -->
+        <section class="py-10 bg-gray-50 dark:bg-gray-900 mt-24">
+          <div class="container-max section-padding">
             <div
-              class="w-16 h-16 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-2xl flex items-center justify-center mb-6"
+              v-motion
+              :initial="{ y: 50, opacity: 0 }"
+              :visible="{ y: 0, opacity: 1, transition: { duration: 800 } }"
+              class="mb-16"
             >
-              <span class="material-symbols-outlined text-white text-2xl">{{
-                category.icon
-              }}</span>
+              <div class="flex items-start gap-4 mb-8">
+                <div
+                  class="w-1 h-16 bg-primary-600 dark:bg-primary-400 rounded-full flex-shrink-0"
+                ></div>
+                <div>
+                  <h2
+                    class="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white font-heading"
+                  >
+                    Şahinler Egypt Product Ranges
+                  </h2>
+                  <p
+                    class="text-lg font-normal mt-2 text-gray-600 dark:text-gray-300"
+                  >
+                    (Men & Women & Kids)
+                  </p>
+                </div>
+              </div>
             </div>
-            <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-              {{ category.title }}
-            </h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">
-              {{ category.description }}
-            </p>
-            <ul class="space-y-2">
-              <li
-                v-for="brand in category.brands"
-                :key="brand"
-                class="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300"
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+              <!-- Left Column - Product Lists -->
+              <div
+                v-motion
+                :initial="{ x: -100, opacity: 0 }"
+                :visible="{ x: 0, opacity: 1, transition: { duration: 800 } }"
+                class="flex flex-col lg:flex-row gap-8"
               >
-                <span class="material-symbols-outlined text-primary-500 text-sm"
-                  >check_circle</span
+                <!-- Knit Wears -->
+                <div
+                  class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow w-full"
                 >
-                <span>{{ brand }}</span>
-              </li>
-            </ul>
+                  <div>
+                    <h3
+                      class="text-2xl font-bold mb-6 text-primary-600 dark:text-primary-400 pb-4 border-b-2 border-primary-200 dark:border-primary-900"
+                    >
+                      Knit Wears
+                    </h3>
+                    <ul class="space-y-3">
+                      <li
+                        v-for="item in knitWears"
+                        :key="item"
+                        class="flex items-start space-x-3"
+                      >
+                        <span
+                          class="material-symbols-outlined text-primary-500 text-lg flex-shrink-0 mt-0.5"
+                          >check_circle</span
+                        >
+                        <span
+                          class="text-gray-700 dark:text-gray-300 font-medium"
+                          >{{ item }}</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Wovens -->
+                <div
+                  class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow w-full"
+                >
+                  <h3
+                    class="text-2xl font-bold mb-6 text-primary-600 dark:text-primary-400 pb-4 border-b-2 border-primary-200 dark:border-primary-900"
+                  >
+                    Wovens
+                  </h3>
+                  <ul class="space-y-3">
+                    <li
+                      v-for="item in wovens"
+                      :key="item"
+                      class="flex items-start space-x-3"
+                    >
+                      <span
+                        class="material-symbols-outlined text-primary-500 text-lg flex-shrink-0 mt-0.5"
+                        >check_circle</span
+                      >
+                      <span
+                        class="text-gray-700 dark:text-gray-300 font-medium"
+                        >{{ item }}</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Right Column - Product Image -->
+              <div
+                v-motion
+                :initial="{ x: 100, opacity: 0 }"
+                :visible="{
+                  x: 0,
+                  opacity: 1,
+                  transition: { duration: 800, delay: 200 },
+                }"
+                class="flex items-center justify-center"
+              >
+                <div
+                  class="w-full bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden"
+                >
+                  <img
+                    src="/products-range.png"
+                    alt="Şahinler Egypt Product Ranges"
+                    class="w-full h-auto object-contain rounded-lg"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-20 bg-gray-50 dark:bg-gray-900">
+    <!-- <section class="py-20 bg-gray-50 dark:bg-gray-900">
       <div class="container-max section-padding">
         <div
           v-motion
@@ -152,7 +227,6 @@
             }"
             class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 relative"
           >
-            <!-- Quote Icon -->
             <div
               class="absolute top-6 right-6 text-primary-200 dark:text-primary-800"
             >
@@ -161,7 +235,6 @@
               >
             </div>
 
-            <!-- Rating -->
             <div class="flex space-x-1 mb-4">
               <span
                 v-for="i in 5"
@@ -172,12 +245,10 @@
               </span>
             </div>
 
-            <!-- Testimonial Text -->
             <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
               "{{ testimonial.text }}"
             </p>
 
-            <!-- Client Info -->
             <div class="flex items-center space-x-4">
               <div
                 class="w-12 h-12 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-full flex items-center justify-center"
@@ -201,7 +272,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Partnership Benefits -->
     <section class="py-20">
@@ -372,6 +443,59 @@ const clientLogos = [
   { name: "Global Apparel", logo: "/clients/client-1 - Copy (8).png" },
   { name: "Retail Chain", logo: "/clients/client-1 - Copy (9).png" },
   { name: "Designer Brand", logo: "/clients/client-1 - Copy (10).png" },
+];
+
+const knitWears = [
+  "Active Wear",
+  "T-Shirts",
+  "Polos",
+  "Hoodies",
+  "Zip Hoodies",
+  "Bomber Jackets",
+  "Joggers",
+  "Sweatpants",
+  "Shorts",
+  "Sweatshirts",
+  "Sleep Wears",
+];
+
+const wovens = [
+  "Pants",
+  "Shorts",
+  "Skirts",
+  "Cargo Pants",
+  "Jackets",
+  "Casual Shirts",
+  "Vests",
+  "Rain Coats",
+];
+
+const productIcons = [
+  { icon: "tank_top", name: "Tank Top" },
+  { icon: "straight_leg_pants", name: "Pants" },
+  { icon: "straight_leg_pants", name: "Chinos" },
+  { icon: "checkroom", name: "T-Shirt" },
+  { icon: "checkroom", name: "Polo" },
+  { icon: "shorts", name: "Shorts" },
+  { icon: "shorts", name: "Cargo" },
+  { icon: "checkroom", name: "Jacket" },
+  { icon: "checkroom", name: "Hoodie" },
+  { icon: "checkroom", name: "Vest" },
+  { icon: "tank_top", name: "Tank" },
+  { icon: "straight_leg_pants", name: "Jogger" },
+  { icon: "straight_leg_pants", name: "Legging" },
+  { icon: "shorts", name: "Skirt" },
+  { icon: "checkroom", name: "Dress" },
+  { icon: "checkroom", name: "Shirt" },
+  { icon: "checkroom", name: "Sweatshirt" },
+  { icon: "checkroom", name: "Cardigan" },
+  { icon: "checkroom", name: "Blazer" },
+  { icon: "checkroom", name: "Coat" },
+  { icon: "checkroom", name: "Windbreaker" },
+  { icon: "checkroom", name: "Bomber" },
+  { icon: "checkroom", name: "Puffer" },
+  { icon: "checkroom", name: "Sweater" },
+  { icon: "checkroom", name: "Active" },
 ];
 
 const clientCategories = [
