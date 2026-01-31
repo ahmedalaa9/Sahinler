@@ -337,7 +337,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+// import { ref } from "vue";
 
 // const isSubmitting = ref(false);
 
@@ -350,50 +350,50 @@ import { ref } from "vue";
 //   message: "",
 // });
 
-const faqs = ref([
-  {
-    id: 1,
-    question: "What is your minimum order quantity (MOQ)?",
-    answer:
-      "Our MOQ varies depending on the product category and complexity. Typically, it ranges from 100 to 500 pieces per style per color. We can discuss specific requirements based on your needs.",
-    isOpen: false,
-  },
-  {
-    id: 2,
-    question: "What is your typical lead time for production?",
-    answer:
-      "Lead times depend on order complexity and quantity. Standard orders typically take 4-6 weeks from sample approval. Rush orders can be accommodated with additional coordination.",
-    isOpen: false,
-  },
-  {
-    id: 3,
-    question: "Do you provide samples before production?",
-    answer:
-      "Yes, we provide samples for approval before starting bulk production. Sample development typically takes 5-7 business days depending on the complexity of the design.",
-    isOpen: false,
-  },
-  {
-    id: 4,
-    question: "What certifications do you have?",
-    answer:
-      "We hold various international certifications including ISO 9001:2015, ISO 14001:2015, OEKO-TEX Standard 100, WRAP, GOTS, and Better Cotton Initiative certifications.",
-    isOpen: false,
-  },
-  {
-    id: 5,
-    question: "Can you handle private label manufacturing?",
-    answer:
-      "Absolutely! We specialize in private label manufacturing and can work with your designs, labels, packaging requirements, and brand specifications.",
-    isOpen: false,
-  },
-  {
-    id: 6,
-    question: "What payment terms do you offer?",
-    answer:
-      "We offer flexible payment terms including T/T (Telegraphic Transfer), L/C (Letter of Credit), and other mutually agreed arrangements. Terms are typically 30% advance and 70% against shipping documents.",
-    isOpen: false,
-  },
-]);
+// const faqs = ref([
+//   {
+//     id: 1,
+//     question: "What is your minimum order quantity (MOQ)?",
+//     answer:
+//       "Our MOQ varies depending on the product category and complexity. Typically, it ranges from 100 to 500 pieces per style per color. We can discuss specific requirements based on your needs.",
+//     isOpen: false,
+//   },
+//   {
+//     id: 2,
+//     question: "What is your typical lead time for production?",
+//     answer:
+//       "Lead times depend on order complexity and quantity. Standard orders typically take 4-6 weeks from sample approval. Rush orders can be accommodated with additional coordination.",
+//     isOpen: false,
+//   },
+//   {
+//     id: 3,
+//     question: "Do you provide samples before production?",
+//     answer:
+//       "Yes, we provide samples for approval before starting bulk production. Sample development typically takes 5-7 business days depending on the complexity of the design.",
+//     isOpen: false,
+//   },
+//   {
+//     id: 4,
+//     question: "What certifications do you have?",
+//     answer:
+//       "We hold various international certifications including ISO 9001:2015, ISO 14001:2015, OEKO-TEX Standard 100, WRAP, GOTS, and Better Cotton Initiative certifications.",
+//     isOpen: false,
+//   },
+//   {
+//     id: 5,
+//     question: "Can you handle private label manufacturing?",
+//     answer:
+//       "Absolutely! We specialize in private label manufacturing and can work with your designs, labels, packaging requirements, and brand specifications.",
+//     isOpen: false,
+//   },
+//   {
+//     id: 6,
+//     question: "What payment terms do you offer?",
+//     answer:
+//       "We offer flexible payment terms including T/T (Telegraphic Transfer), L/C (Letter of Credit), and other mutually agreed arrangements. Terms are typically 30% advance and 70% against shipping documents.",
+//     isOpen: false,
+//   },
+// ]);
 
 // const submitForm = async () => {
 //   isSubmitting.value = true;
@@ -412,10 +412,10 @@ const faqs = ref([
 //   }, 2000);
 // };
 
-const toggleFaq = (id: number) => {
-  const faq = faqs.value.find((f) => f.id === id);
-  if (faq) {
-    faq.isOpen = !faq.isOpen;
-  }
-};
+// const toggleFaq = (id: number) => {
+//   const faq = faqs.value.find((f) => f.id === id);
+//   if (faq) {
+//     faq.isOpen = !faq.isOpen;
+//   }
+// };
 </script>

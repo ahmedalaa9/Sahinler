@@ -34,7 +34,7 @@
           class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-6"
         >
           <div
-            v-for="(product, index) in products"
+            v-for="product in products"
             :key="product.id"
             v-motion
             :initial="{ y: 50, opacity: 0 }"
