@@ -41,7 +41,7 @@
             :visible="{
               y: 0,
               opacity: 1,
-              transition: { duration: 600, delay: index * 100 },
+              transition: { duration: 200, delay: 100 },
             }"
             class="group overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift"
           >
@@ -205,6 +205,18 @@ const products = [
   { id: 12, image: "/products/333.jpeg" },
   { id: 13, image: "/products/444.jpeg" },
   { id: 14, image: "/products/555.jpeg" },
+  { id: 7721, image: "/products/prod-1.png" },
+  { id: 7722, image: "/products/prod-2.png" },
+  { id: 7723, image: "/products/prod-3.png" },
+  { id: 7724, image: "/products/prod-4.png" },
+  { id: 7725, image: "/products/prod-5.png" },
+  { id: 7726, image: "/products/prod-6.png" },
+  { id: 7727, image: "/products/prod-7.png" },
+  { id: 7728, image: "/products/prod-8.png" },
+  { id: 7729, image: "/products/prod-9.png" },
+  { id: 77210, image: "/products/prod-10.png" },
+  { id: 77211, image: "/products/prod-11.png" },
+  { id: 77212, image: "/products/prod-12.png" },
   { id: 122, image: "/products/tshirt-1.png" },
   { id: 222, image: "/products/tshirt-1-Copy.png" },
   { id: 322, image: "/products/tshirt-1-Copy(2).png" },

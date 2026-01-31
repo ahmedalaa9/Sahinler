@@ -241,7 +241,7 @@
           </div>
 
           <!-- Quick Response Time -->
-          <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
+          <!-- <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
             <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
               Quick Response
             </h3>
@@ -262,14 +262,14 @@
               Our dedicated customer service team is committed to providing
               prompt responses to help you with your manufacturing needs.
             </p>
-          </div>
+          </div> -->
         </div>
       </div>
       <!-- </div> -->
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-20">
+    <!-- <section class="py-20">
       <div class="container-max section-padding">
         <div
           v-motion
@@ -332,7 +332,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
 

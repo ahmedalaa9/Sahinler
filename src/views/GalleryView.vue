@@ -8,7 +8,7 @@
         <div
           v-motion
           :initial="{ y: 100, opacity: 0 }"
-          :visible="{ y: 0, opacity: 1, transition: { duration: 1000 } }"
+          :visible="{ y: 0, opacity: 1, transition: { duration: 500 } }"
           class="text-center"
         >
           <h1
@@ -62,7 +62,7 @@
             :visible="{
               y: 0,
               opacity: 1,
-              transition: { duration: 600, delay: index * 100 },
+              transition: { duration: 100, delay: index },
             }"
             class="group cursor-pointer"
           >
@@ -72,7 +72,7 @@
               <img
                 :src="image.src"
                 :alt="image.title"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 max-h-[200px]"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 min-h-[350px] max-h-[350px]"
               />
               <div
                 class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
@@ -117,7 +117,7 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <CounterAnimation
             v-for="(stat, index) in facilityStats"
             :key="stat.label"
@@ -126,7 +126,7 @@
             :visible="{
               scale: 1,
               opacity: 1,
-              transition: { duration: 600, delay: index * 200 },
+              transition: { duration: 300, delay: index * 200 },
             }"
             :value="stat.value"
             :label="stat.label"
@@ -166,7 +166,7 @@
             :visible="{
               y: 0,
               opacity: 1,
-              transition: { duration: 600, delay: index * 200 },
+              transition: { duration: 200, delay: index * 300 },
             }"
             class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group hover-lift"
           >
@@ -202,7 +202,7 @@
     </section>
 
     <!-- Team Section -->
-    <section class="py-20 bg-gray-50 dark:bg-gray-900">
+    <!-- <section class="py-20 bg-gray-50 dark:bg-gray-900">
       <div class="container-max section-padding">
         <div
           v-motion
@@ -257,7 +257,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Lightbox Modal -->
     <!-- <Transition
@@ -310,46 +310,201 @@ const galleryCategories = ["All", "Factory Floor", "Machinery", "Facilities"];
 
 const galleryImages = [
   {
-    id: 1,
-    src: "/gallery/factory-floor.png",
-    title: "Production Line Overview",
-    description: "State-of-the-art production line with automated systems",
-    category: "Factory Floor",
-  },
-  {
-    id: 154,
-    src: "/gallery/factory-floor2.png",
-    title: "Production Line Overview",
-    description: "State-of-the-art production line with automated systems",
-    category: "Factory Floor",
-  },
-  {
-    id: 1254,
-    src: "/gallery/factory-floor4.jpeg",
-    title: "Production Line Overview",
-    description: "State-of-the-art production line with automated systems",
-    category: "Factory Floor",
-  },
-  {
-    id: 1544,
-    src: "/gallery/factory-floor5.jpeg",
-    title: "Production Line Overview",
-    description: "State-of-the-art production line with automated systems",
-    category: "Factory Floor",
-  },
-  {
-    id: 1154,
-    src: "/gallery/factory-floor6.jpeg",
-    title: "Production Line Overview",
-    description: "State-of-the-art production line with automated systems",
-    category: "Factory Floor",
-  },
-  {
-    id: 2,
-    src: "/gallery/machine-1.jpeg",
-    title: "Cutting Department",
-    description: "Precision cutting machines ensuring accurate patterns",
+    id: 31,
+    src: "/gallery/machine/machines-1.jpg",
     category: "Machinery",
+  },
+  {
+    id: 32,
+    src: "/gallery/machine/machines-2.jpg",
+    category: "Machinery",
+  },
+  {
+    id: 33,
+    src: "/gallery/machine/machines-3.jpg",
+    category: "Machinery",
+  },
+  {
+    id: 34,
+    src: "/gallery/machine/machines-4.jpg",
+    category: "Machinery",
+  },
+  {
+    id: 35,
+    src: "/gallery/machine/machines-5.jpg",
+    category: "Machinery",
+  },
+  {
+    id: 36,
+    src: "/gallery/machine/machines-6.jpg",
+    category: "Machinery",
+  },
+  {
+    id: 37,
+    src: "/gallery/machine/machines-7.png",
+    category: "Machinery",
+  },
+  {
+    id: 38,
+    src: "/gallery/machine/machines-8.png",
+    category: "Machinery",
+  },
+  {
+    id: 39,
+    src: "/gallery/machine/machines-9.png",
+    category: "Machinery",
+  },
+  {
+    id: 310,
+    src: "/gallery/machine/machines-10.jpg",
+    category: "Machinery",
+  },
+  {
+    id: 311,
+    src: "/gallery/machine/machines-11.jpg",
+    category: "Machinery",
+  },
+  {
+    id: 312,
+    src: "/gallery/machine/machines-12.png",
+    category: "Machinery",
+  },
+  {
+    id: 313,
+    src: "/gallery/machine/machines-13.png",
+    category: "Machinery",
+  },
+  {
+    id: 314,
+    src: "/gallery/machine/machines-14.jpg",
+    category: "Machinery",
+  },
+  {
+    id: 315,
+    src: "/gallery/machine/machines-15.jpg",
+    category: "Machinery",
+  },
+  {
+    id: 316,
+    src: "/gallery/machine/machines-16.jpeg",
+    category: "Machinery",
+  },
+  {
+    id: 317,
+    src: "/gallery/machine/machines-17.jpeg",
+    category: "Machinery",
+  },
+  {
+    id: 318,
+    src: "/gallery/machine/machines-18.jpeg",
+    category: "Machinery",
+  },
+
+  {
+    id: 220,
+    src: "/gallery/factory/factory-1.jpg",
+    category: "Factory Floor",
+  },
+
+  {
+    id: 221,
+    src: "/gallery/factory/factory-2.jpg",
+    category: "Factory Floor",
+  },
+  {
+    id: 222,
+    src: "/gallery/factory/factory-3.jpg",
+    category: "Factory Floor",
+  },
+  {
+    id: 223,
+    src: "/gallery/factory/factory-4.jpg",
+    category: "Factory Floor",
+  },
+  {
+    id: 224,
+    src: "/gallery/factory/factory-5.jpg",
+    category: "Factory Floor",
+  },
+  {
+    id: 225,
+    src: "/gallery/factory/factory-6.jpg",
+    category: "Factory Floor",
+  },
+  {
+    id: 226,
+    src: "/gallery/factory/factory-7.jpeg",
+    category: "Factory Floor",
+  },
+  {
+    id: 227,
+    src: "/gallery/factory/factory-8.jpeg",
+    category: "Factory Floor",
+  },
+  {
+    id: 228,
+    src: "/gallery/factory/factory-9.jpeg",
+    category: "Factory Floor",
+  },
+  {
+    id: 229,
+    src: "/gallery/factory/factory-10.jpeg",
+    category: "Factory Floor",
+  },
+  {
+    id: 230,
+    src: "/gallery/factory/factory-11.jpeg",
+    category: "Factory Floor",
+  },
+  {
+    id: 231,
+    src: "/gallery/factory/factory-12.jpeg",
+    category: "Factory Floor",
+  },
+  {
+    id: 232,
+    src: "/gallery/factory/factory-13.jpeg",
+    category: "Factory Floor",
+  },
+  {
+    id: 233,
+    src: "/gallery/factory/factory-14.jpeg",
+    category: "Factory Floor",
+  },
+  {
+    id: 234,
+    src: "/gallery/factory/factory-15.jpeg",
+    category: "Factory Floor",
+  },
+  {
+    id: 235,
+    src: "/gallery/factory/factory-16.jpeg",
+    category: "Factory Floor",
+  },
+  {
+    id: 236,
+    src: "/gallery/factory/factory-17.jpeg",
+    category: "Factory Floor",
+  },
+  {
+    id: 237,
+    src: "/gallery/factory/factory-18.jpeg",
+    category: "Factory Floor",
+  },
+  {
+    id: 238,
+    src: "/gallery/factory/factory-19.jpeg",
+    category: "Factory Floor",
+  },
+  {
+    id: 239,
+    src: "/gallery/factory/factory-20.jpeg",
+    category: "Factory Floor",
+  },
+  {
+    id: 240,
+    src: "/gallery/factory/factory-21.jpeg",
+    category: "Factory Floor",
   },
 
   {
@@ -360,34 +515,6 @@ const galleryImages = [
     category: "Facilities",
   },
 
-  {
-    id: 10,
-    src: "/gallery/machine-1.jpeg",
-    title: "Cutting Department",
-    description: "Precision cutting machines ensuring accurate patterns",
-    category: "Machinery",
-  },
-  {
-    id: 11,
-    src: "/gallery/machine-2.jpeg",
-    title: "Cutting Department",
-    description: "Precision cutting machines ensuring accurate patterns",
-    category: "Machinery",
-  },
-  {
-    id: 12,
-    src: "/gallery/machine-3.jpeg",
-    title: "Cutting Department",
-    description: "Precision cutting machines ensuring accurate patterns",
-    category: "Machinery",
-  },
-  {
-    id: 13,
-    src: "/gallery/machine-4.jpeg",
-    title: "Cutting Department",
-    description: "Precision cutting machines ensuring accurate patterns",
-    category: "Machinery",
-  },
   // {
   //   id: 14,
   //   src: "/gallery/machine-5.jpeg",
@@ -408,7 +535,7 @@ const facilityStats = [
   { value: 15000, label: "Square Meters", suffix: "" },
   { value: 500, label: "Employees", suffix: "+" },
   { value: 50, label: "Production Lines", suffix: "" },
-  { value: 24, label: "Hours Operations", suffix: "/7" },
+  // { value: 24, label: "Hours Operations", suffix: "/7" },
 ];
 
 const machinery = [
@@ -450,32 +577,32 @@ const machinery = [
   },
 ];
 
-const departments = [
-  {
-    name: "Production",
-    count: 350,
-    description: "Skilled operators and technicians",
-    icon: "manufacturing",
-  },
-  {
-    name: "Quality Control",
-    count: 25,
-    description: "Quality assurance specialists",
-    icon: "verified",
-  },
-  {
-    name: "Design & Development",
-    count: 15,
-    description: "Creative and technical designers",
-    icon: "design_services",
-  },
-  {
-    name: "Management",
-    count: 35,
-    description: "Leadership and administration",
-    icon: "corporate_fare",
-  },
-];
+// const departments = [
+//   {
+//     name: "Production",
+//     count: 350,
+//     description: "Skilled operators and technicians",
+//     icon: "manufacturing",
+//   },
+//   {
+//     name: "Quality Control",
+//     count: 25,
+//     description: "Quality assurance specialists",
+//     icon: "verified",
+//   },
+//   {
+//     name: "Design & Development",
+//     count: 15,
+//     description: "Creative and technical designers",
+//     icon: "design_services",
+//   },
+//   {
+//     name: "Management",
+//     count: 35,
+//     description: "Leadership and administration",
+//     icon: "corporate_fare",
+//   },
+// ];
 
 // const openLightbox = (image) => {
 //   selectedImage.value = image;

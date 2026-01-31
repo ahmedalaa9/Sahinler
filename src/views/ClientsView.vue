@@ -51,7 +51,7 @@
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-16">
           <div
             v-for="(client, index) in clientLogos"
-            :key="client.name"
+            :key="client.id"
             v-motion
             :initial="{ scale: 0.8, opacity: 0 }"
             :visible="{
@@ -431,18 +431,47 @@
 
 <script setup lang="ts">
 const clientLogos = [
-  { name: "Fashion Brand A", logo: "/clients/client-1.png" },
-  { name: "Sportswear Co", logo: "/clients/client-2.png" },
-  { name: "Luxury Label", logo: "/clients/client-1 - Copy.png" },
-  { name: "Casual Wear", logo: "/clients/client-1 - Copy (2).png" },
-  { name: "Athletic Pro", logo: "/clients/client-1 - Copy (3).png" },
-  { name: "Fashion House", logo: "/clients/client-1 - Copy (4).png" },
-  { name: "Urban Style", logo: "/clients/client-1 - Copy (5).png" },
-  { name: "Kids Fashion", logo: "/clients/client-1 - Copy (6).png" },
-  { name: "Premium Brand", logo: "/clients/client-1 - Copy (7).png" },
-  { name: "Global Apparel", logo: "/clients/client-1 - Copy (8).png" },
-  { name: "Retail Chain", logo: "/clients/client-1 - Copy (9).png" },
-  { name: "Designer Brand", logo: "/clients/client-1 - Copy (10).png" },
+  { id: 1, logo: "/clients/client-1.png" },
+  { id: 2, logo: "/clients/client-2.png" },
+  { id: 3, logo: "/clients/client-3.png" },
+  { id: 4, logo: "/clients/client-4.png" },
+  { id: 5, logo: "/clients/client-5.jpg" },
+  { id: 6, logo: "/clients/client-6.png" },
+  { id: 7, logo: "/clients/client-7.png" },
+  { id: 8, logo: "/clients/client-8.png" },
+  { id: 9, logo: "/clients/client-9.png" },
+  { id: 10, logo: "/clients/client-10.png" },
+  { id: 11, logo: "/clients/client-11.png" },
+  { id: 12, logo: "/clients/client-12.png" },
+  { id: 13, logo: "/clients/client-13.png" },
+  { id: 14, logo: "/clients/client-14.png" },
+  { id: 15, logo: "/clients/client-15.png" },
+  { id: 16, logo: "/clients/client-16.png" },
+  { id: 17, logo: "/clients/client-17.png" },
+  { id: 18, logo: "/clients/client-18.png" },
+  { id: 19, logo: "/clients/client-19.png" },
+  { id: 20, logo: "/clients/client-20.png" },
+  { id: 21, logo: "/clients/client-21.png" },
+  { id: 22, logo: "/clients/client-22.png" },
+  { id: 23, logo: "/clients/client-23.png" },
+  { id: 24, logo: "/clients/client-24.png" },
+  { id: 25, logo: "/clients/client-25.png" },
+  { id: 26, logo: "/clients/client-26.png" },
+  { id: 27, logo: "/clients/client-27.png" },
+  { id: 28, logo: "/clients/client-28.png" },
+  { id: 29, logo: "/clients/client-29.png" },
+  { id: 30, logo: "/clients/client-30.png" },
+  { id: 31, logo: "/clients/client-31.png" },
+  { id: 32, logo: "/clients/client-32.png" },
+  { id: 33, logo: "/clients/client-33.png" },
+  { id: 34, logo: "/clients/client-34.png" },
+  { id: 35, logo: "/clients/client-35.png" },
+  { id: 36, logo: "/clients/client-36.png" },
+  { id: 37, logo: "/clients/client-37.jpg" },
+  { id: 38, logo: "/clients/client-38.jpg" },
+  { id: 39, logo: "/clients/client-39.jpg" },
+  { id: 40, logo: "/clients/client-40.jpg" },
+  { id: 41, logo: "/clients/client-41.png" },
 ];
 
 const knitWears = [

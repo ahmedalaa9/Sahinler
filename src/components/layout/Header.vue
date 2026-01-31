@@ -17,7 +17,7 @@
         >
           <img
             class="w-36 h-16 group-hover:scale-105 transition-all duration-300"
-            src="/main-logo.jpeg"
+            src="/main-logo2.jpeg"
             alt="Şahinler Egypt Logo"
           />
         </router-link>

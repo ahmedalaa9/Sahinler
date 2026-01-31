@@ -44,21 +44,21 @@
             :initial="{ x: -100, opacity: 0 }"
             :visible="{ x: 0, opacity: 1, transition: { duration: 800 } }"
           >
-            <div
+            <!-- <div
               class="inline-flex items-center px-4 py-2 bg-primary-100 dark:bg-primary-900 rounded-full text-primary-700 dark:text-primary-300 text-sm font-medium mb-6"
             >
               <span class="material-symbols-outlined text-sm mr-2"
                 >history</span
               >
               Since 1982
-            </div>
+            </div> -->
             <h2
               class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900 dark:text-white font-heading"
             >
               Four Decades of
               <span class="heading-gradient">Diversified Excellence</span>
             </h2>
-            <p
+            <!-- <p
               class="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed"
             >
               The Şahinler story began in 1982 when Kemal Şahin established
@@ -67,15 +67,74 @@
               across multiple sectors including construction, catering, free
               zone administration, ready-made garments, textiles, tourism, and
               sport academies.
-            </p>
+            </p> -->
             <p
               class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed"
             >
-              Today, Şahinler Holding operates across 6 countries with 10,000
+              <!-- Today, Şahinler Holding operates across 6 countries with 10,000
               direct employees and 30,000 indirect employees, serving diverse
               markets through our integrated business model and commitment to
-              excellence in every sector.
+              excellence in every sector. -->
+              <!-- Established in 2006, expansion with second factory in 2025 in
+              Alexandria- Egypt, 19 years experience in the field. <br />
+              Private Free Zone company, duty free to USA with QIZ, Europe with
+              Euro-1 & Euro-Med, Africa with Comesa agreement. <br />
+              Serving US & Europe markets by leveraging Egypt’s strong
+              advantages as strategic geographic location, access to major
+              markets, competitive & skilled and young labor workforce, reliable
+              and improving energy supply, stable & supportive government
+              policies. <br />
+              Monthly capacity is 900K ( Knit & Woven ) <br />
+              60 minutes to Alexandria Port, 20 minutes to Borg Al-Arab Airport. -->
             </p>
+
+            <ul class="space-y-3 mb-8">
+              <li
+                class="flex items-center space-x-2 text-gray-600 dark:text-gray-300"
+              >
+                <span class="material-symbols-outlined text-lg"> check </span>
+                <span>
+                  Established in 2006, expansion with second factory in 2025 in
+                  Alexandria- Egypt, 19 years experience in the field.</span
+                >
+              </li>
+              <li
+                class="flex items-center space-x-2 text-gray-600 dark:text-gray-300"
+              >
+                <span class="material-symbols-outlined text-lg"> check </span>
+                <span>
+                  Private Free Zone company, duty free to USA with QIZ, Europe
+                  with Euro-1 & Euro-Med, Africa with Comesa agreement.</span
+                >
+              </li>
+              <li
+                class="flex items-center space-x-2 text-gray-600 dark:text-gray-300"
+              >
+                <span class="material-symbols-outlined text-lg"> check </span>
+                <span>
+                  Serving US & Europe markets by leveraging Egypt’s strong
+                  advantages as strategic geographic location, access to major
+                  markets, competitive & skilled and young labor workforce,
+                  reliable and improving energy supply, stable & supportive
+                  government policies.</span
+                >
+              </li>
+              <li
+                class="flex items-center space-x-2 text-gray-600 dark:text-gray-300"
+              >
+                <span class="material-symbols-outlined text-lg"> check </span>
+                <span> Monthly capacity is 900K ( Knit & Woven )</span>
+              </li>
+              <li
+                class="flex items-center space-x-2 text-gray-600 dark:text-gray-300"
+              >
+                <span class="material-symbols-outlined text-lg"> check </span>
+                <span>
+                  60 minutes to Alexandria Port, 20 minutes to Borg Al-Arab
+                  Airport.</span
+                >
+              </li>
+            </ul>
             <div class="grid grid-cols-2 gap-6">
               <div
                 class="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-xl"
@@ -115,7 +174,7 @@
             class="relative"
           >
             <img
-              src="/public/Sahinler-about.png"
+              src="/public/Sahinler-about3.png"
               alt="Şahinler Heritage"
               class="w-full h-[450px] object-contain rounded-2xl shadow-lg"
             />
@@ -332,14 +391,14 @@
               transition: { duration: 800, delay: 300 },
             }"
           >
-            <div
+            <!-- <div
               class="inline-flex items-center px-4 py-2 bg-secondary-100 dark:bg-secondary-900 rounded-full text-secondary-700 dark:text-secondary-300 text-sm font-medium mb-6"
             >
               <span class="material-symbols-outlined text-sm mr-2"
                 >location_on</span
               >
               10th of Ramadan City, Egypt
-            </div>
+            </div> -->
             <h2
               class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900 dark:text-white font-heading"
             >
@@ -351,8 +410,8 @@
             >
               Şahinler Egypt operates from a state-of-the-art facility spanning
               10,000 square meters total area with 6,000 square meters of closed
-              production space in the 10th of Ramadan City, strategically
-              positioned to serve Middle Eastern, African, and European markets.
+              production space , strategically positioned to serve Middle
+              Eastern, African, and European markets.
             </p>
             <p
               class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed"
@@ -411,6 +470,7 @@
 
     <!-- Facility Area Breakdown Section -->
     <section class="py-20 bg-gray-50 dark:bg-gray-900">
+      <!-- Main Factory Area -->
       <div class="container-max section-padding">
         <div
           v-motion
@@ -632,12 +692,333 @@
             </div>
           </div>
         </div>
+
+        <div></div>
       </div>
+
+      <!-- Second Factory Area Breakdown Section -->
+      <section class="py-20 bg-white dark:bg-gray-900">
+        <div class="container-max section-padding">
+          <div
+            v-motion
+            :initial="{ y: 50, opacity: 0 }"
+            :visible="{ y: 0, opacity: 1, transition: { duration: 800 } }"
+            class="text-center mb-8"
+          >
+            <h2
+              class="text-4xl lg:text-5xl font-bold mb-4 text-gray-900 dark:text-white font-heading"
+            >
+              Second Factory Area
+              <span class="heading-gradient">Breakdown</span>
+            </h2>
+            <p
+              class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto"
+            >
+              (30 production line)
+            </p>
+
+            <!-- Key Metrics -->
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16 max-w-2xl mx-auto"
+            >
+              <div
+                class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md text-center"
+              >
+                <div
+                  class="text-lg font-bold text-blue-600 dark:text-blue-400 mb-1"
+                >
+                  Total area
+                </div>
+                <div class="text-2xl font-bold text-gray-900 dark:text-white">
+                  10,908 m²
+                </div>
+              </div>
+              <div
+                class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md text-center"
+              >
+                <div
+                  class="text-lg font-bold text-blue-600 dark:text-blue-400 mb-1"
+                >
+                  Closed area
+                </div>
+                <div class="text-2xl font-bold text-gray-900 dark:text-white">
+                  15,000 m²
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <!-- Pie Chart Placeholder -->
+            <div
+              v-motion
+              :initial="{ x: -100, opacity: 0 }"
+              :visible="{ x: 0, opacity: 1, transition: { duration: 800 } }"
+              class="flessx justify-centers"
+            >
+              <img
+                src="/public/Sahinler-about-breakdown2.png"
+                alt="Second factory pie chart placeholder"
+                class="w-full h-[420pxs] object-contain rounded-2xl shadow-lg"
+              />
+            </div>
+
+            <!-- Facility Details List (matches attached design) -->
+            <div
+              v-motion
+              :initial="{ x: 100, opacity: 0 }"
+              :visible="{
+                x: 0,
+                opacity: 1,
+                transition: { duration: 800, delay: 200 },
+              }"
+              class="space-y-4"
+            >
+              <!-- Item template: colored icon, title, value pill -->
+              <div
+                class="flex items-center justify-between bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md p-4"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-500"
+                  >
+                    <span class="material-symbols-outlined text-white"
+                      >inventory</span
+                    >
+                  </div>
+                  <div>
+                    <h4
+                      class="text-base font-semibold text-gray-900 dark:text-white"
+                    >
+                      Fabric Warehouse
+                    </h4>
+                  </div>
+                </div>
+                <div
+                  class="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full"
+                >
+                  687 m²
+                </div>
+              </div>
+
+              <div
+                class="flex items-center justify-between bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md p-4"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center rounded-full bg-orange-500"
+                  >
+                    <span class="material-symbols-outlined text-white"
+                      >content_cut</span
+                    >
+                  </div>
+                  <div>
+                    <h4
+                      class="text-base font-semibold text-gray-900 dark:text-white"
+                    >
+                      Cutting
+                    </h4>
+                  </div>
+                </div>
+                <div
+                  class="text-sm bg-orange-100 text-orange-700 px-3 py-1 rounded-full"
+                >
+                  3284 m²
+                </div>
+              </div>
+
+              <div
+                class="flex items-center justify-between bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md p-4"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-500"
+                  >
+                    <span class="material-symbols-outlined text-white"
+                      >checkroom</span
+                    >
+                  </div>
+                  <div>
+                    <h4
+                      class="text-base font-semibold text-gray-900 dark:text-white"
+                    >
+                      Sewing & Ironing & Q.C. & Packing Area
+                    </h4>
+                  </div>
+                </div>
+                <div
+                  class="text-sm bg-gray-200 text-gray-800 px-3 py-1 rounded-full"
+                >
+                  4893 m²
+                </div>
+              </div>
+
+              <div
+                class="flex items-center justify-between bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md p-4"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center rounded-full bg-yellow-400"
+                  >
+                    <span class="material-symbols-outlined text-white"
+                      >shopping_bag</span
+                    >
+                  </div>
+                  <div>
+                    <h4
+                      class="text-base font-semibold text-gray-900 dark:text-white"
+                    >
+                      Accessory Warehouse
+                    </h4>
+                  </div>
+                </div>
+                <div
+                  class="text-sm bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full"
+                >
+                  576 m²
+                </div>
+              </div>
+
+              <div
+                class="flex items-center justify-between bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md p-4"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center rounded-full bg-cyan-400"
+                  >
+                    <span class="material-symbols-outlined text-white"
+                      >print</span
+                    >
+                  </div>
+                  <div>
+                    <h4
+                      class="text-base font-semibold text-gray-900 dark:text-white"
+                    >
+                      Printing House
+                    </h4>
+                  </div>
+                </div>
+                <div
+                  class="text-sm bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full"
+                >
+                  1000 m²
+                </div>
+              </div>
+
+              <div
+                class="flex items-center justify-between bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md p-4"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center rounded-full bg-green-500"
+                  >
+                    <span class="material-symbols-outlined text-white"
+                      >local_shipping</span
+                    >
+                  </div>
+                  <div>
+                    <h4
+                      class="text-base font-semibold text-gray-900 dark:text-white"
+                    >
+                      Shipping Warehouse
+                    </h4>
+                  </div>
+                </div>
+                <div
+                  class="text-sm bg-green-100 text-green-700 px-3 py-1 rounded-full"
+                >
+                  1073 m²
+                </div>
+              </div>
+
+              <div
+                class="flex items-center justify-between bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md p-4"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-900"
+                  >
+                    <span class="material-symbols-outlined text-white"
+                      >manage_accounts</span
+                    >
+                  </div>
+                  <div>
+                    <h4
+                      class="text-base font-semibold text-gray-900 dark:text-white"
+                    >
+                      Management
+                    </h4>
+                  </div>
+                </div>
+                <div
+                  class="text-sm bg-blue-100 text-blue-800 px-3 py-1 rounded-full"
+                >
+                  600 m²
+                </div>
+              </div>
+
+              <div
+                class="flex items-center justify-between bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md p-4"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center rounded-full bg-amber-700"
+                  >
+                    <span class="material-symbols-outlined text-white"
+                      >build</span
+                    >
+                  </div>
+                  <div>
+                    <h4
+                      class="text-base font-semibold text-gray-900 dark:text-white"
+                    >
+                      Machine Warehouse
+                    </h4>
+                  </div>
+                </div>
+                <div
+                  class="text-sm bg-amber-100 text-amber-800 px-3 py-1 rounded-full"
+                >
+                  269 m²
+                </div>
+              </div>
+
+              <div
+                class="flex items-center justify-between bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md p-4"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-600"
+                  >
+                    <span class="material-symbols-outlined text-white"
+                      >delete</span
+                    >
+                  </div>
+                  <div>
+                    <h4
+                      class="text-base font-semibold text-gray-900 dark:text-white"
+                    >
+                      Rubbish Store
+                    </h4>
+                  </div>
+                </div>
+                <div
+                  class="text-sm bg-gray-200 text-gray-800 px-3 py-1 rounded-full"
+                >
+                  126 m²
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- /////////////////////////////////////////////////////////////// -->
     </section>
 
     <!-- Business Sectors Section -->
-    <section class="py-20 bg-gray-50 dark:bg-gray-900">
-      <div class="container-max section-padding">
+    <!-- <section class="py-20 bg-gray-50 dark:bg-gray-900"> -->
+    <!-- <div class="container-max section-padding">
         <div
           v-motion
           :initial="{ y: 50, opacity: 0 }"
@@ -655,10 +1036,9 @@
             synergies and expertise to deliver comprehensive solutions across
             multiple industries.
           </p>
-        </div>
+        </div> -->
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          <!-- Construction Sector -->
+    <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           <div
             v-motion
             :initial="{ scale: 0.8, opacity: 0 }"
@@ -685,7 +1065,6 @@
             </p>
           </div>
 
-          <!-- Catering Sector -->
           <div
             v-motion
             :initial="{ scale: 0.8, opacity: 0 }"
@@ -712,7 +1091,6 @@
             </p>
           </div>
 
-          <!-- Free Zone Administration -->
           <div
             v-motion
             :initial="{ scale: 0.8, opacity: 0 }"
@@ -739,7 +1117,6 @@
             </p>
           </div>
 
-          <!-- Ready Made Garment -->
           <div
             v-motion
             :initial="{ scale: 0.8, opacity: 0 }"
@@ -766,7 +1143,6 @@
             </p>
           </div>
 
-          <!-- Textile -->
           <div
             v-motion
             :initial="{ scale: 0.8, opacity: 0 }"
@@ -793,7 +1169,6 @@
             </p>
           </div>
 
-          <!-- Tourism -->
           <div
             v-motion
             :initial="{ scale: 0.8, opacity: 0 }"
@@ -820,7 +1195,6 @@
             </p>
           </div>
 
-          <!-- Sport Academy -->
           <div
             v-motion
             :initial="{ scale: 0.8, opacity: 0 }"
@@ -846,10 +1220,10 @@
               athletic talent and promoting healthy lifestyles.
             </p>
           </div>
-        </div>
+        </div> -->
 
-        <!-- Sector Integration Summary -->
-        <!-- <div
+    <!-- Sector Integration Summary -->
+    <!-- <div
           class="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-3xl p-8 lg:p-12 text-white"
         >
           <div class="text-center">
@@ -882,8 +1256,8 @@
             </div>
           </div>
         </div> -->
-      </div>
-    </section>
+    <!-- </div> -->
+    <!-- </section> -->
 
     <!-- Mission & Vision Section -->
     <section
