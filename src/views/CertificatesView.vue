@@ -51,152 +51,29 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div
             v-for="(certificate, index) in certificatesData"
-            :key="certificate.certificateId"
+            :key="certificate.thumbUrl"
             v-motion
             :initial="{ y: 50, opacity: 0 }"
             :visible="{
               y: 0,
               opacity: 1,
-              transition: { duration: 600, delay: index * 150 },
+              transition: { duration: 200, delay: index * 50 },
             }"
             class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group flex flex-col h-full"
           >
             <!-- Certificate Thumbnail -->
             <div
-              class="relative h-40 bg-gradient-to-br from-primary-100 to-secondary-100 dark:from-gray-700 dark:to-gray-600 overflow-hidden flex items-center justify-center"
+              class="relative h-[200px] bg-whitedark:from-gray-700 dark:to-gray-600 overflow-hidden flex items-center justify-center p-4"
             >
               <img
                 v-if="certificate.thumbUrl"
                 :src="certificate.thumbUrl"
                 :alt="certificate.title"
-                class="h-40 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                class="h-full w-full object-contain rounded-lg border-2 border-gray-200 dark:border-gray-600 shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all duration-300 p-1.5"
                 @error="
                   (e) => ((e.target as HTMLImageElement).style.display = 'none')
                 "
               />
-              <!-- Fallback Placeholder -->
-              <div
-                v-show="!certificate.thumbUrl"
-                class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary-100 to-secondary-100 dark:from-gray-700 dark:to-gray-600"
-              >
-                <div class="text-center">
-                  <span
-                    class="material-symbols-outlined text-6xl text-primary-400 dark:text-primary-500 mb-2 block"
-                  >
-                    card_membership
-                  </span>
-                  <p
-                    class="text-sm text-primary-600 dark:text-primary-300 font-medium"
-                  >
-                    Certificate
-                  </p>
-                </div>
-              </div>
-
-              <!-- Status Badge -->
-              <div class="absolute top-4 right-4 z-10">
-                <span
-                  class="inline-flex items-center space-x-1 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-lg"
-                >
-                  <span class="material-symbols-outlined text-sm"
-                    >check_circle</span
-                  >
-                  <span>{{ certificate.status }}</span>
-                </span>
-              </div>
-            </div>
-
-            <!-- Certificate Details -->
-            <div class="p-6 flex flex-col flex-grow">
-              <!-- Title & Description -->
-              <h3
-                class="text-xl font-bold mb-2 text-gray-900 dark:text-white line-clamp-2"
-              >
-                {{ certificate.title }}
-              </h3>
-              <p
-                class="text-gray-600 dark:text-gray-300 text-sm mb-6 leading-relaxed h-12 line-clamp-2"
-              >
-                {{ certificate.description }}
-              </p>
-
-              <!-- Certificate Metadata -->
-              <div
-                class="space-y-3 mb-6 border-t border-gray-200 dark:border-gray-700 pt-4"
-              >
-                <div class="flex items-center justify-between text-sm gap-2">
-                  <span
-                    class="text-gray-500 dark:text-gray-400 flex items-center space-x-1 whitespace-nowrap"
-                  >
-                    <span class="material-symbols-outlined text-base"
-                      >business</span
-                    >
-                    <span>Issued by:</span>
-                  </span>
-                  <span
-                    class="font-medium text-gray-900 dark:text-white text-right truncate"
-                  >
-                    {{ certificate.issuedBy }}
-                  </span>
-                </div>
-                <div class="flex items-center justify-between text-sm gap-2">
-                  <span
-                    class="text-gray-500 dark:text-gray-400 flex items-center space-x-1 whitespace-nowrap"
-                  >
-                    <span class="material-symbols-outlined text-base"
-                      >calendar_today</span
-                    >
-                    <span>Valid until:</span>
-                  </span>
-                  <span
-                    class="font-medium text-gray-900 dark:text-white truncate"
-                  >
-                    {{ certificate.validUntil }}
-                  </span>
-                </div>
-                <div class="flex items-center justify-between text-sm gap-2">
-                  <span
-                    class="text-gray-500 dark:text-gray-400 flex items-center space-x-1 whitespace-nowrap"
-                  >
-                    <span class="material-symbols-outlined text-base"
-                      >fingerprint</span
-                    >
-                    <span>ID:</span>
-                  </span>
-                  <span
-                    class="font-mono text-xs text-gray-600 dark:text-gray-400 truncate"
-                  >
-                    {{ certificate.certificateId }}
-                  </span>
-                </div>
-              </div>
-
-              <!-- Footer with Tag and Action -->
-              <div
-                class="flex items-center justify-between mt-auto pt-4 border-t border-gray-200 dark:border-gray-700"
-              >
-                <!-- Tag Badge -->
-                <span
-                  class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap"
-                  :class="getTagColor(certificate.tag)"
-                >
-                  {{ certificate.tag }}
-                </span>
-
-                <!-- View PDF Button -->
-                <a
-                  @click="openPDF(certificate.pdfUrl)"
-                  class="inline-flex items-center space-x-1 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium transition-colors duration-200 group/btn"
-                  :title="`Open ${certificate.title} PDF`"
-                >
-                  <span
-                    class="material-symbols-outlined text-lg group-hover/btn:translate-x-0.5 transition-transform"
-                  >
-                    open_in_new
-                  </span>
-                  <span class="text-sm">View</span>
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -417,108 +294,42 @@
 // Certificates Data Structure
 interface Certificate {
   title: string;
-  description: string;
-  issuedBy: string;
-  validUntil: string;
-  certificateId: string;
-  tag: "Quality" | "Environmental" | "Social";
-  status: "Active" | "Pending" | "Expired";
-  pdfUrl: string;
   thumbUrl?: string;
 }
 
 const certificatesData: Certificate[] = [
   {
     title: "ISO 9001:2015",
-    description:
-      "Quality Management System certification ensuring consistent quality and customer satisfaction across all manufacturing processes.",
-    issuedBy: "International Organization for Standardization",
-    validUntil: "December 2026",
-    certificateId: "ISO-9001-2023-001",
-    tag: "Quality",
-    status: "Active",
-    pdfUrl: "/certificates/_e-cert_9001_2015_EN_sahinler egypt.pdf",
-    thumbUrl: "/certificates/_e-cert_9001_2015_EN_sahinler egypt.png",
+    thumbUrl: "/certificates/certificate-1.png",
   },
-  // {
-  //   title: "ISO 14001:2015",
-  //   description:
-  //     "Environmental Management System certification for sustainable manufacturing practices and resource efficiency.",
-  //   issuedBy: "International Organization for Standardization",
-  //   validUntil: "November 2026",
-  //   certificateId: "ISO-14001-2023-002",
-  //   tag: "Environmental",
-  //   status: "Active",
-  //   pdfUrl: "/certificates/ISO-14001-2015.pdf",
-  //   thumbUrl: "/certificates/ISO-14001-2015.png",
-  // },
+
   {
     title: "WRAP Certification",
-    description:
-      "Worldwide Responsible Accredited Production certification validating ethical manufacturing and fair labor practices.",
-    issuedBy: "Worldwide Responsible Accredited Production",
-    validUntil: "August 2025",
-    certificateId: "WRAP-2023-004",
-    tag: "Social",
-    status: "Active",
-    pdfUrl: "/certificates/WRAP 10886-CERTIFICATE-20250324.pdf",
-    thumbUrl: "/certificates/WRAP 10886-CERTIFICATE-20250324.png",
+    thumbUrl: "/certificates/certificate-2.png",
   },
   {
     title: "GOTS Certification",
-    description:
-      "Global Organic Textile Standard ensuring organic fiber products meet stringent environmental and social criteria.",
-    issuedBy: "Global Organic Textile Standard",
-    validUntil: "June 2025",
-    certificateId: "GOTS-2023-005",
-    tag: "Environmental",
-    status: "Active",
-    pdfUrl: "/certificates/HIGG FEM 2024 certificate.pdf",
-    thumbUrl: "/certificates/HIGG FEM 2024 certificate.png",
+    thumbUrl: "/certificates/certificate-3.png",
   },
   {
     title: "Better Cotton Initiative",
-    description:
-      "Promoting better standards in cotton farming and supply chain practices across the global textile industry.",
-    issuedBy: "Better Cotton Initiative",
-    validUntil: "September 2025",
-    certificateId: "BCI-2023-006",
-    tag: "Environmental",
-    status: "Active",
-    pdfUrl: "/certificates/GRS - RCS 2025.pdf",
-    thumbUrl: "/certificates/GRS - RCS 2025.png",
+    thumbUrl: "/certificates/certificate-4.png",
   },
   {
     title: "Costco Apparel Compliance",
-    description:
-      "Costco compliance certification for apparel and home textile manufacturing standards and requirements.",
-    issuedBy: "Costco",
-    validUntil: "May 2026",
-    certificateId: "COSTCO-2025-001",
-    tag: "Quality",
-    status: "Active",
-    pdfUrl:
-      "/certificates/Costco_Apparel_HomeTextile_FA_Version20_05May2025.pdf",
-    thumbUrl:
-      "/certificates/Costco_Apparel_HomeTextile_FA_Version20_05May2025.png",
+    thumbUrl: "/certificates/certificate-5.png",
+  },
+  {
+    title: "Costco Apparel Compliance",
+    thumbUrl: "/certificates/certificate-6.png",
+  },
+  {
+    title: "Costco Apparel Compliance",
+    thumbUrl: "/certificates/certificate-7.png",
   },
 ];
 
 // Methods
-const getTagColor = (tag: string): string => {
-  const colors: Record<string, string> = {
-    Quality: "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300",
-    Environmental:
-      "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
-    Social:
-      "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300",
-  };
-  return colors[tag] || colors["Quality"];
-};
-
-const openPDF = (pdfUrl: string): void => {
-  window.open(pdfUrl, "_blank", "noopener,noreferrer");
-};
 
 const complianceStandards = [
   {

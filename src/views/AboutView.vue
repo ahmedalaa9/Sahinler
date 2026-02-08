@@ -195,7 +195,7 @@
     </section>
 
     <!-- Global Presence Section -->
-    <section class="py-20 bg-gray-50 dark:bg-gray-900">
+    <!-- <section class="py-20 bg-gray-50 dark:bg-gray-900">
       <div class="container-max section-padding">
         <div
           v-motion
@@ -290,7 +290,6 @@
           </div>
         </div>
 
-        <!-- Global Rankings -->
         <div
           class="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-3xl p-8 lg:p-12 text-white"
         >
@@ -354,7 +353,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Egypt Operations Section -->
     <section class="py-20">
