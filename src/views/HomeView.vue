@@ -395,17 +395,17 @@
           >
             <div class="grid grid-cols-2 gap-4">
               <img
-                src="/public/gallery/machine-1.jpeg"
+                src="/public/gallery-images/machine-1.jpeg"
                 alt="Manufacturing Excellence"
                 class="rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               />
               <img
-                src="/public/gallery/machine-2.jpeg"
+                src="/public/gallery-images/machine-2.jpeg"
                 alt="Quality Control"
                 class="rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 mt-8 h-[250px]"
               />
               <img
-                src="/public/gallery/machine-6.jpeg"
+                src="/public/gallery-images/machine-6.jpeg"
                 alt="Quality Control"
                 class="rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 mt-8"
               />
@@ -538,22 +538,22 @@ const productCategories = [
   {
     name: "Knitwear",
     description: "Premium knitted garments with superior comfort and fit",
-    image: "/products/product-1.jpeg",
+    image: "/product-images/product-1.jpeg",
   },
   {
     name: "Woven",
     description: "High-quality woven fabrics for diverse applications",
-    image: "/products/Woven.jpeg",
+    image: "/product-images/Woven.jpeg",
   },
   {
     name: "Embroidery",
     description: "Intricate embroidered designs with precision and artistry",
-    image: "/products/embroidered.png",
+    image: "/product-images/embroidered.png",
   },
   {
     name: "SROQUE",
     description: "SROQUE Automatic Screen Printing Machine",
-    image: "/products/SROQUE.png",
+    image: "/product-images/SROQUE.png",
   },
 ];
 </script>

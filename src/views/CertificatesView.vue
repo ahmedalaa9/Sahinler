@@ -300,32 +300,32 @@ interface Certificate {
 const certificatesData: Certificate[] = [
   {
     title: "ISO 9001:2015",
-    thumbUrl: "/certificates/certificate-1.png",
+    thumbUrl: "/certificates-images/certificate-1.png",
   },
 
   {
     title: "WRAP Certification",
-    thumbUrl: "/certificates/certificate-2.png",
+    thumbUrl: "/certificates-images/certificate-2.png",
   },
   {
     title: "GOTS Certification",
-    thumbUrl: "/certificates/certificate-3.png",
+    thumbUrl: "/certificates-images/certificate-3.png",
   },
   {
     title: "Better Cotton Initiative",
-    thumbUrl: "/certificates/certificate-4.png",
+    thumbUrl: "/certificates-images/certificate-4.png",
   },
   {
     title: "Costco Apparel Compliance",
-    thumbUrl: "/certificates/certificate-5.png",
+    thumbUrl: "/certificates-images/certificate-5.png",
   },
   {
     title: "Costco Apparel Compliance",
-    thumbUrl: "/certificates/certificate-6.png",
+    thumbUrl: "/certificates-images/certificate-6.png",
   },
   {
     title: "Costco Apparel Compliance",
-    thumbUrl: "/certificates/certificate-7.png",
+    thumbUrl: "/certificates-images/certificate-7.png",
   },
 ];
 
